@@ -1,50 +1,139 @@
 # DramaForge
 
-DramaForge는 드라마/영화 대본을 분석하고 각색하기 위한 웹 기반 도구입니다.
+DramaForge is a web-based tool for analyzing and adapting drama/movie scripts. It supports writers' creative processes through structural analysis and visualization of scripts.
 
-## 주요 기능
+## 🚀 Key Features
 
-### 1. 인물 분석
-- 등장인물별 대사량 시각화 (막대 그래프)
-- 무대 체류 시간 분석 (막대 그래프)
-- 등장인물 타임라인 (간트 차트)
-- 인물별 대사 하이라이트 기능
+### 📊 Character Analysis
+- **Dialogue Analysis**
+  - Statistical analysis and visualization of dialogue distribution
+  - Pattern recognition in character dialogues
+  - Character-specific dialogue highlighting
+  - Sentiment analysis of dialogues
 
-### 2. 사건 분석
-- 장면별 메타데이터 분석 (유형/시간/장소)
-- Unit 단위 타임라인 시각화
-- 플롯 구조 시각화 (exposition → development → climax → conclusion)
-- Unit별 상세 정보 (등장인물/대화 주제/상황 변화/분위기)
+- **Appearance Pattern Analysis**
+  - Stage time analysis and visualization
+  - Character timeline (Gantt chart)
+  - Character interaction pattern analysis
+  - Scene presence tracking
 
-### 3. 각색 지원
-- 인물 통합/분할 기능
-- 사건 구조 수정
-- 배경 및 설정 변경
+### 🎬 Event Analysis
+- **Structural Analysis**
+  - Scene metadata analysis (type/time/location)
+  - Unit-based timeline visualization
+  - Three-act structure plot analysis
+  - Story arc mapping
 
-## 기술 스택
+- **Detailed Analysis**
+  - Unit-by-unit character composition
+  - Dialogue topic and keyword extraction
+  - Scene mood/tone analysis
+  - Situation progression tracking
+  - Dramatic tension visualization
 
-- Frontend: React
-- 상태 관리: Jotai
-- 시각화: recharts, reactflow
+### ✏️ Adaptation Support
+- **Structure Modification**
+  - Character merge/split functionality
+  - Event structure reorganization
+  - Scene sequence optimization
+  - Plot point adjustment
 
-## 프로젝트 구조
+- **Setting Management**
+  - Background and timeline modifications
+  - Character profile management
+  - Plot point configuration
+  - Scene context adjustment
+
+## 🛠 Tech Stack
+
+### Frontend
+- **Core**: React 18
+- **State Management**: Jotai
+- **Visualization**
+  - recharts: Statistical data visualization
+  - reactflow: Relationship diagrams and flow charts
+- **Styling**: CSS Modules
+
+### Development Tools
+- **Build Tool**: Vite
+- **Deployment**: Vercel
+- **Code Quality**
+  - ESLint: Code linting
+  - Prettier: Code formatting
+- **Version Control**: Git
+
+## 📁 Project Structure
 
 ```
 src/
-├── components/
-│   ├── analysis/       # 분석 관련 컴포넌트
-│   ├── editor/         # 대본 편집 컴포넌트
-│   └── common/         # 공통 컴포넌트
-├── services/
-│   ├── analysis/       # 분석 관련 서비스
-│   └── api/           # API 설정
-├── store/              # Jotai 상태 관리
-└── App.jsx             # 메인 애플리케이션
+├── components/           # React Components
+│   ├── analysis/        # Analysis-related components
+│   │   ├── characters/  # Character analysis
+│   │   └── settings/    # Analysis settings
+│   ├── editor/          # Script editor components
+│   └── common/          # Shared components
+├── services/            # Business Logic
+│   ├── analysis/        # Analysis services
+│   └── api/             # API communication
+├── store/               # State management (Jotai)
+├── styles/              # CSS styles
+├── utils/               # Utility functions
+└── assets/             # Static resources
 
 public/
-└── scripts/           # 샘플 대본 JSON 파일
+└── scripts/            # Sample script JSONs
 ```
 
-## 라이선스
+## 🚦 Getting Started
 
-MIT License
+### Prerequisites
+- Node.js 16.0 or higher
+- npm 7.0 or higher
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/dramaforge.git
+
+# Navigate to project directory
+cd dramaforge
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_URL=your_api_url
+VITE_API_KEY=your_api_key
+```
+
+## 🔍 Usage
+
+1. Upload your script in JSON format
+2. Navigate to the analysis dashboard
+3. Use the various analysis tools to gain insights
+4. Make adaptations using the editor
+5. Export your modified script
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers at [contact@dramaforge.com](mailto:contact@dramaforge.com).
