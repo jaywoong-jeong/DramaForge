@@ -69,7 +69,7 @@ function AnalysisPanel() {
       <div className="analysis-panel">
         <div className="analysis-start-container">
           <img 
-            src="/public/image/200w.gif" 
+            src="/image/200w.gif" 
             alt="분석 중" 
             className="loading-gif"
           />
