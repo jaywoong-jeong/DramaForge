@@ -32,12 +32,6 @@ function AnalysisPanel() {
   const [currentSceneTime, setCurrentSceneTime] = useState(null);
 
   useEffect(() => {
-    if (script && !analysisStatus.isAnalyzing) {
-      analyzeScript();
-    }
-  }, [script]);
-
-  useEffect(() => {
     if (script && analysisResult) {
       calculateTotalTime(script).then(time => {
         setTotalTime(formatTime(time));

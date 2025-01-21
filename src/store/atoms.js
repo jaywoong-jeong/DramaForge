@@ -48,3 +48,14 @@ export const sceneLayoutAtom = atom(
 export const selectedSceneIdAtom = atom(null);  // 선택된 장면 ID를 추적하는 atom
 
 export const selectedPropsTypeAtom = atom('all');
+
+// 버전 관리를 위한 atoms
+export const currentVersionAtom = atom(1); // 현재 선택된 버전
+export const compareVersionAtom = atom(null); // 비교할 버전 (null이면 비교모드 아님)
+export const scriptVersionsAtom = atom([]); // 사용 가능한 버전 목록
+
+// Version comparison atoms
+export const leftVersionAtom = atom(1);
+export const rightVersionAtom = atom(2);
+export const previousVersionAtom = atom(1);
+export const isCompareModeAtom = atom(false);

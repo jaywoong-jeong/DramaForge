@@ -1,5 +1,8 @@
 import { useAtom } from 'jotai';
-import { scriptAtom, currentSceneAtom, editorHighlightAtom, selectedScriptAtom } from '../../store/atoms';
+import { scriptAtom, currentSceneAtom, editorHighlightAtom, selectedScriptAtom, isCompareModeAtom } from '../../store/atoms';
+import ScriptControls from './ScriptControls';
+import EditorControls from './EditorControls';
+import CompareView from './CompareView';
 import '../../styles/components/editor.css';
 
 function ScriptEditor() {
@@ -7,6 +10,7 @@ function ScriptEditor() {
   const [currentScene, setCurrentScene] = useAtom(currentSceneAtom);
   const [highlight] = useAtom(editorHighlightAtom);
   const [selectedScript] = useAtom(selectedScriptAtom);
+  const [isCompareMode] = useAtom(isCompareModeAtom);
 
   if (!script) return <div className="editor-panel">Loading...</div>;
 
@@ -110,60 +114,69 @@ function ScriptEditor() {
 
   return (
     <div className="editor-panel">
-      <div className="script-header">
-        <div className="header-main">
-          <h2>대본: {selectedScript}</h2>
-          <select 
-            className="scene-selector"
-            value={currentScene}
-            onChange={(e) => setCurrentScene(Number(e.target.value))}
-          >
-            <option value={-1}>전체</option>
-            {script.scenes.map((scene, index) => (
-              <option key={index} value={index}>
-                {index + 1}장: {scene.title || `장면 ${index + 1}`}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="character-list">
-          <h3>등장인물</h3>
-          <ul>
-            {Array.isArray(script?.characters) && script.characters.map((char, idx) => (
-              <li key={idx}>{char}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="script-content">
-        <div className="stage-description">
-          <h3>무대 설명</h3>
-          <p>{script?.stage?.description || '무대 설명이 없습니다.'}</p>
-        </div>
-
-        <div className="scenes">
-          {Array.isArray(script?.scenes) && script.scenes.map((scene, sceneIdx) => (
-            (currentScene === -1 || currentScene === sceneIdx) && (
-              <div 
-                key={sceneIdx}
-                className={`scene ${currentScene === sceneIdx ? 'active' : ''}`}
-                onClick={() => setCurrentScene(sceneIdx)}
-              >
-                <h3>Scene {scene.scene_number}</h3>
-                {renderDirections(scene.directions, sceneIdx)}
-                {renderDialogues(scene.dialogues, sceneIdx)}
-                {renderDirections(scene.directions_post, sceneIdx)}
-                {renderDialogues(scene.dialogues_post, sceneIdx)}
-                {renderDirections(scene.directions_final, sceneIdx)}
-                {renderDialogues(scene.dialogues_final, sceneIdx)}
-                {renderDirections(scene.directions_end, sceneIdx)}
-                {renderDialogues(scene.dialogues_end, sceneIdx)}
+      <EditorControls />
+      {isCompareMode ? (
+        <CompareView />
+      ) : (
+        <div className="editor-main-content">
+          <div className="script-header">
+            <div className="header-content">
+              <h2>{script.title || selectedScript}</h2>
+              <div className="header-controls">
+                <select 
+                  className="scene-selector"
+                  value={currentScene}
+                  onChange={(e) => setCurrentScene(Number(e.target.value))}
+                >
+                  <option value={-1}>전체 장면</option>
+                  {script.scenes.map((scene, idx) => (
+                    <option key={idx} value={idx}>
+                      장면 {idx + 1}
+                    </option>
+                  ))}
+                </select>
               </div>
-            )
-          ))}
+            </div>
+          </div>
+          <div className="content-header">
+            <div className="character-list">
+              <h3>등장인물</h3>
+              <ul>
+                {Array.isArray(script?.characters) && script.characters.map((char, idx) => (
+                  <li key={idx}>{char}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="stage-description">
+            <h3>무대 설명</h3>
+            <p>{script?.stage?.description || '무대 설명이 없습니다.'}</p>
+          </div>
+
+          <div className="scenes">
+            {Array.isArray(script?.scenes) && script.scenes.map((scene, sceneIdx) => (
+              (currentScene === -1 || currentScene === sceneIdx) && (
+                <div 
+                  key={sceneIdx}
+                  className={`scene ${currentScene === sceneIdx ? 'active' : ''}`}
+                  onClick={() => setCurrentScene(sceneIdx)}
+                >
+                  <h3>Scene {scene.scene_number}</h3>
+                  {renderDirections(scene.directions, sceneIdx)}
+                  {renderDialogues(scene.dialogues, sceneIdx)}
+                  {renderDirections(scene.directions_post, sceneIdx)}
+                  {renderDialogues(scene.dialogues_post, sceneIdx)}
+                  {renderDirections(scene.directions_final, sceneIdx)}
+                  {renderDialogues(scene.dialogues_final, sceneIdx)}
+                  {renderDirections(scene.directions_end, sceneIdx)}
+                  {renderDialogues(scene.dialogues_end, sceneIdx)}
+                </div>
+              )
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
