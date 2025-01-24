@@ -1,6 +1,6 @@
 import { analyzeScene } from '../api/openai';
 import { ANALYSIS_PROMPTS } from '../api/config';
-
+/*
 export async function analyzeUnits(sceneContent) {
   try {
     // Unit 분석 수행
@@ -16,7 +16,7 @@ export async function analyzeUnits(sceneContent) {
     console.error('Unit 분석 실패:', error);
     throw error;
   }
-}
+}*/
 
 function cleanJsonResponse(response) {
   // 마크다운 코드 블록 제거

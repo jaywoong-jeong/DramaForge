@@ -8,6 +8,7 @@ export const OPENAI_CONFIG = {
 };
 
 export const ANALYSIS_PROMPTS = {
+  /*
   sceneAnalysis: `[중요: 순수 JSON만 출력하세요. 다른 텍스트나 설명을 포함하지 마세요. JSON.parse()로 파싱 가능해야 합니다]
 
 다음 연극 대본의 장면을 분석하여 아래 JSON 형식으로 출력해주세요:
@@ -31,7 +32,8 @@ export const ANALYSIS_PROMPTS = {
 }
 
 대본:`,
-
+*/
+/*
   unitAnalysis: `[중요: 순수 JSON만 출력하세요. 다른 텍스트나 설명을 포함하지 마세요. JSON.parse()로 파싱 가능해야 합니다]
 
 현재 장면을 핵심 unit으로 분석하여 JSON 형식으로 출력해주세요.
@@ -64,7 +66,8 @@ export const ANALYSIS_PROMPTS = {
 }
 
 대본:`,
-
+*/
+/*
   plotAnalysis: `[중요: 순수 JSON만 출력하세요. 다른 텍스트나 설명을 포함하지 마세요. JSON.parse()로 파싱 가능해야 합니다]
 
 전체 연극 대본을 분석하여 다음 형식의 JSON으로 출력해주세요:
@@ -88,7 +91,7 @@ export const ANALYSIS_PROMPTS = {
 }
 
 대본:`,
-
+*/
   settingsAnalysis: `다음 연극 대본에서 소품과 무대 설비를 분석하여 아래 JSON 형식으로 출력해주세요:
 
 {

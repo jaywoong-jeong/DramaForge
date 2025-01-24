@@ -1,30 +1,24 @@
-import { analyzeScene } from '../api/openai';
+import { analyzeWholeScene, analyzeScene, analyzeUnit } from '../api/openai';
 import { ANALYSIS_PROMPTS } from '../api/config';
-import { analyzeUnits } from './unitAnalyzer';
+//import { analyzeUnits } from './unitAnalyzer';
 
 export async function analyzePlot(parsedScript) {
   try {
     // 전체 플롯 분석
-    const plotAnalysis = await analyzeScene(
-      parsedScript,
-      ANALYSIS_PROMPTS.plotAnalysis
-    );
+    const plotAnalysis = await analyzeWholeScene( parsedScript );
 
     // JSON 형식으로 파싱
-    const plotStructure = JSON.parse(cleanJsonResponse(plotAnalysis));
+    const plotStructure = JSON.parse(plotAnalysis);
 
     // 각 장면별 분석 (2단계로 나누어 수행)
     const sceneAnalyses = await Promise.all(
       parsedScript.scenes.map(async (scene) => {
         // 1단계: 장면의 기본 정보 분석
-        const sceneAnalysis = await analyzeScene(
-          scene.content,
-          ANALYSIS_PROMPTS.sceneAnalysis
-        );
-        const baseAnalysis = JSON.parse(cleanJsonResponse(sceneAnalysis));
+        const sceneAnalysis = await analyzeScene( scene.content );
+        const baseAnalysis = JSON.parse(sceneAnalysis);
 
         // 2단계: unit 분석
-        const unitAnalysis = await analyzeUnits(scene.content);
+        const unitAnalysis = await analyzeUnit(scene.content);
 
         // 두 분석 결과 병합
         return {
