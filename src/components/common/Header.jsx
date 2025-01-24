@@ -41,8 +41,8 @@ export default function Header() {
               </option>
             ))}
           </select>
-          <Upload className="header-icon" />
-          <Settings className="header-icon" />
+          {/* <Upload className="header-icon" />
+          <Settings className="header-icon" /> */}
         </div>
       </div>
     </header>

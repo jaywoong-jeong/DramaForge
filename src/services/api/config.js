@@ -1,6 +1,6 @@
 export const OPENAI_CONFIG = {
   apiKey: import.meta.env.VITE_OPENAI_API_KEY,
-  model: 'gpt-4o',
+  model: 'gpt-4o-2024-11-20',
   temperature: 0.7,
   max_tokens: 16000,
   chunkSize: 16384,
