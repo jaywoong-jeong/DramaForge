@@ -7,7 +7,7 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .main-content {
@@ -62,6 +62,7 @@
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #e5e7eb;
+  height: 3.5rem;
 }
 
 .header-content {

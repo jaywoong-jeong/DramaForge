@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   min-height: 0;
-  max-height: calc(100vh - 200px); /* 헤더와 컨트롤 영역을 제외한 높이 */
+  max-height: calc(100vh); /* 헤더와 컨트롤 영역을 제외한 높이 */
 }
 
 .character-list {
