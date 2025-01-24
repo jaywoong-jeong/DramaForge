@@ -34,8 +34,8 @@ function App() {
         <CompareView />
       ) : (
         <div className="main-content">
-          <AnalysisPanel />
           <ScriptEditor />
+          <AnalysisPanel />
         </div>
       )}
     </div>
