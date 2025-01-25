@@ -1,4 +1,4 @@
-import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, addDoc, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { db } from '../firebase';
 
 /**
@@ -9,19 +9,18 @@ import { db } from '../firebase';
  */
 export const uploadScript = async (scriptData, scriptName) => {
   try {
-    // 먼저 같은 이름의 스크립트가 있는지 확인
     const scriptsRef = collection(db, 'scripts');
+    
+    // 현재 버전 확인
     const q = query(scriptsRef, where('title', '==', scriptName));
     const querySnapshot = await getDocs(q);
-
-    if (!querySnapshot.empty) {
-      throw new Error('이미 같은 이름의 스크립트가 존재합니다.');
-    }
+    const currentVersion = querySnapshot.size + 1;
 
     // 스크립트 데이터에 메타데이터 추가
     const scriptWithMetadata = {
       ...scriptData,
       title: scriptName,
+      version: currentVersion,
       uploadedAt: new Date().toISOString(),
     };
 
@@ -31,6 +30,20 @@ export const uploadScript = async (scriptData, scriptName) => {
 
   } catch (error) {
     console.error('Error uploading script:', error);
+    throw error;
+  }
+};
+
+/**
+ * Firebase Firestore에서 스크립트를 삭제하는 함수
+ * @param {string} documentId - 삭제할 스크립트의 문서 ID
+ */
+export const deleteScript = async (documentId) => {
+  try {
+    const docRef = doc(db, 'scripts', documentId);
+    await deleteDoc(docRef);
+  } catch (error) {
+    console.error('Error deleting script:', error);
     throw error;
   }
 };

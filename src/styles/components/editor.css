@@ -867,18 +867,20 @@
 .upload-script-button {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  .upload-label {
+    background-color: #6d6d6d;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .upload-label:hover {
+    background-color: #4a4a4a;
+  }
 }
 
-.upload-label {
-  background-color: #4a90e2;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.upload-label:hover {
-  background-color: #357abd;
-}
+
+

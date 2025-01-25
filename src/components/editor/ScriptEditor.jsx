@@ -4,7 +4,7 @@ import ScriptControls from './ScriptControls';
 import EditorControls from './EditorControls';
 import CompareView from './CompareView';
 import '../../styles/components/editor.css';
-import { uploadScript } from '../../api/firebase/uploadScript';
+import { uploadScript, deleteScript } from '../../api/firebase/uploadScript';
 import { useEffect, useState } from 'react';
 import { fetchScriptList, fetchScriptByTitle } from '../../api/firebase/fetchScript';
 
@@ -167,11 +167,18 @@ function ScriptEditor() {
         const scriptData = JSON.parse(e.target.result);
         const scriptName = file.name.replace('.json', '');
         
+        // 현재 선택된 스크립트 초기화 (같은 이름의 스크립트 업로드를 위해)
+        setSelectedScript('대본을 선택해주세요');
+        setScript(null);
+        
         // Firebase에 업로드
         await uploadScript(scriptData, scriptName);
         
-        // 로컬 상태 업데이트
-        setScript(scriptData);
+        // 스크립트 목록 다시 불러오기
+        const updatedScripts = await fetchScriptList();
+        setAvailableScripts(updatedScripts);
+        
+        // 새로 업로드된 스크립트 선택
         setSelectedScript(scriptName);
         
         alert('스크립트가 성공적으로 업로드되었습니다.');
@@ -183,6 +190,30 @@ function ScriptEditor() {
     reader.readAsText(file);
   };
 
+  const handleDeleteScript = async () => {
+    if (!script?.id) return;
+    
+    if (window.confirm(`정말로 "${selectedScript}" 스크립트를 삭제하시겠습니까?`)) {
+      try {
+        await deleteScript(script.id);
+        
+        // 스크립트 목록 다시 불러오기
+        const updatedScripts = await fetchScriptList();
+        setAvailableScripts(updatedScripts);
+        
+        // 상태 초기화 (null 대신 기본값으로 설정)
+        setScript(null);
+        setSelectedScript('대본을 선택해주세요');
+        setCurrentScene(-1);
+        
+        alert('스크립트가 성공적으로 삭제되었습니다.');
+      } catch (error) {
+        console.error('Error deleting script:', error);
+        alert('스크립트 삭제 중 오류가 발생했습니다.');
+      }
+    }
+  };
+
   return (
     <div className="editor-panel">
       {isCompareMode ? (
@@ -191,7 +222,7 @@ function ScriptEditor() {
         <>
         <div className="editor-header">
           <div className="header">
-            <h3>대본을 선택해주세요</h3>
+            <h3>대본 선택 or 업로드</h3>
             <select 
             value={selectedScript}
             onChange={(e) => setSelectedScript(e.target.value)}
@@ -201,11 +232,7 @@ function ScriptEditor() {
                 {script}
               </option>
             ))}
-          </select>
-          </div>
-          
-        {!selectedScript ? (
-          <>
+            </select>
             <div className="upload-script-button">
               <label htmlFor="script-upload" className="upload-label">
                 대본 파일 업로드 (.json)
@@ -219,6 +246,10 @@ function ScriptEditor() {
                 style={{ display: 'none' }}
               />
             </div>
+          </div>
+          
+        {!selectedScript ? (
+          <>
           </>
           
         ) : (
@@ -226,8 +257,17 @@ function ScriptEditor() {
           <EditorControls />
           <div className="script-header">
             <div className="header-content">
-              <h2>{script.title || selectedScript}</h2>
+              <h2>
+                {script.title || selectedScript}
+                {script?.version && <span className="version-tag">v{script.version}</span>}
+              </h2>
               <div className="header-controls">
+                <button 
+                  onClick={handleDeleteScript}
+                  className="delete-button"
+                >
+                  스크립트 삭제
+                </button>
                 <select 
                   className="scene-selector"
                   value={currentScene}
