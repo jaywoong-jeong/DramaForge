@@ -4,6 +4,7 @@ import { selectedScriptAtom, scriptAtom } from '../../store/atoms';
 import { useEffect } from 'react';
 
 const AVAILABLE_SCRIPTS = [
+  '대본을 선택해주세요',
   '대왕은 죽기를 거부했다',
   '시청각실',
   '파수꾼'
@@ -15,10 +16,12 @@ export default function Header() {
 
   useEffect(() => {
     // 선택된 스크립트 로드
-    fetch(`/scripts/${selectedScript}.json`)
-      .then(res => res.json())
-      .then(data => setScript(data))
-      .catch(err => console.error('스크립트 로드 실패:', err));
+    if (selectedScript) {
+      fetch(`/scripts/${selectedScript}.json`)
+        .then(res => res.json())
+        .then(data => setScript(data))
+        .catch(err => console.error('스크립트 로드 실패:', err));
+    }
   }, [selectedScript, setScript]);
 
   return (
@@ -28,6 +31,7 @@ export default function Header() {
           DramaForge
           <span className="header-version">v1.0</span>
         </div>
+        {/*
         <div className="header-actions">
           <span className="header-select-label">대본 선택</span>
           <select 
@@ -41,9 +45,10 @@ export default function Header() {
               </option>
             ))}
           </select>
-          {/* <Upload className="header-icon" />
-          <Settings className="header-icon" /> */}
+          <Upload className="header-icon" />
+          <Settings className="header-icon" />
         </div>
+        */}
       </div>
     </header>
   );

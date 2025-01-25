@@ -4,13 +4,58 @@ import ScriptControls from './ScriptControls';
 import EditorControls from './EditorControls';
 import CompareView from './CompareView';
 import '../../styles/components/editor.css';
+import { uploadScript } from '../../api/firebase/uploadScript';
+import { useEffect, useState } from 'react';
+import { fetchScriptList, fetchScriptByTitle } from '../../api/firebase/fetchScript';
 
 function ScriptEditor() {
-  const [script] = useAtom(scriptAtom);
+  const [script, setScript] = useAtom(scriptAtom);
   const [currentScene, setCurrentScene] = useAtom(currentSceneAtom);
   const [highlight] = useAtom(editorHighlightAtom);
-  const [selectedScript] = useAtom(selectedScriptAtom);
+  const [selectedScript, setSelectedScript] = useAtom(selectedScriptAtom);
   const [isCompareMode] = useAtom(isCompareModeAtom);
+  const [availableScripts, setAvailableScripts] = useState(['대본을 선택해주세요']);
+
+  /*
+    const AVAILABLE_SCRIPTS = [
+    '대본을 선택해주세요',
+    '대왕은 죽기를 거부했다',
+    '시청각실',
+    '파수꾼'
+  ];
+  */
+
+  // 스크립트 목록 가져오기
+  useEffect(() => {
+    const loadScripts = async () => {
+      try {
+        const scripts = await fetchScriptList();
+        setAvailableScripts(scripts);
+      } catch (error) {
+        console.error('스크립트 목록을 불러오는데 실패했습니다:', error);
+        alert('스크립트 목록을 불러오는데 실패했습니다.');
+      }
+    };
+    
+    loadScripts();
+  }, []);
+
+  // 선택된 스크립트 데이터 가져오기
+  useEffect(() => {
+    const loadScript = async () => {
+      if (selectedScript && selectedScript !== '대본을 선택해주세요') {
+        try {
+          const scriptData = await fetchScriptByTitle(selectedScript);
+          setScript(scriptData);
+        } catch (error) {
+          console.error('스크립트를 불러오는데 실패했습니다:', error);
+          alert('스크립트를 불러오는데 실패했습니다.');
+        }
+      }
+    };
+    
+    loadScript();
+  }, [selectedScript, setScript]);
 
   if (!script) return <div className="editor-panel">Loading...</div>;
 
@@ -112,13 +157,73 @@ function ScriptEditor() {
     });
   };
 
+  const handleFileUpload = async (event) => {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (e) => {
+      try {
+        const scriptData = JSON.parse(e.target.result);
+        const scriptName = file.name.replace('.json', '');
+        
+        // Firebase에 업로드
+        await uploadScript(scriptData, scriptName);
+        
+        // 로컬 상태 업데이트
+        setScript(scriptData);
+        setSelectedScript(scriptName);
+        
+        alert('스크립트가 성공적으로 업로드되었습니다.');
+      } catch (error) {
+        console.error('Error handling file:', error);
+        alert(error.message || '스크립트 업로드 중 오류가 발생했습니다.');
+      }
+    };
+    reader.readAsText(file);
+  };
+
   return (
     <div className="editor-panel">
-      <EditorControls />
       {isCompareMode ? (
         <CompareView />
       ) : (
+        <>
+        <div className="editor-header">
+          <div className="header">
+            <h3>대본을 선택해주세요</h3>
+            <select 
+            value={selectedScript}
+            onChange={(e) => setSelectedScript(e.target.value)}
+            className="header-script-select">
+            {availableScripts.map(script => (
+              <option key={script} value={script}>
+                {script}
+              </option>
+            ))}
+          </select>
+          </div>
+          
+        {!selectedScript ? (
+          <>
+            <div className="upload-script-button">
+              <label htmlFor="script-upload" className="upload-label">
+                대본 파일 업로드 (.json)
+              </label>
+              <input
+                id="script-upload"
+                type="file"
+                accept=".json"
+                onChange={handleFileUpload}
+                className="file-input"
+                style={{ display: 'none' }}
+              />
+            </div>
+          </>
+          
+        ) : (
         <div className="editor-main-content">
+          <EditorControls />
           <div className="script-header">
             <div className="header-content">
               <h2>{script.title || selectedScript}</h2>
@@ -176,6 +281,9 @@ function ScriptEditor() {
             ))}
           </div>
         </div>
+        )}
+        </div>
+        </>
       )}
     </div>
   );

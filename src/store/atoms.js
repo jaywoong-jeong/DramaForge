@@ -2,7 +2,7 @@ import { atom } from 'jotai';
 
 // 기존 atoms 유지
 export const scriptAtom = atom(null);
-export const selectedScriptAtom = atom('시청각실');
+export const selectedScriptAtom = atom(null);
 export const currentSceneAtom = atom(0);
 export const analysisResultAtom = atom(null);
 export const analysisStatusAtom = atom({

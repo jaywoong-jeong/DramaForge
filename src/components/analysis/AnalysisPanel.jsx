@@ -6,7 +6,8 @@ import {
   analysisStatusAtom, 
   currentSceneAtom, 
   editorHighlightAtom, 
-  scriptAtom 
+  scriptAtom,
+  selectedScriptAtom
 } from '../../store/atoms';
 import { useScriptAnalysis } from '../../store/hooks';
 import { calculateTotalTime, calculateSceneTime, formatTime } from '../../services/analysis/timeAnalyzer';
@@ -30,6 +31,7 @@ function AnalysisPanel() {
   const [selectedUnitId, setSelectedUnitId] = useState(null);
   const [totalTime, setTotalTime] = useState(null);
   const [currentSceneTime, setCurrentSceneTime] = useState(null);
+  const [selectedScript, setSelectedScript] = useAtom(selectedScriptAtom);
 
   useEffect(() => {
     if (script && analysisResult) {
@@ -81,6 +83,7 @@ function AnalysisPanel() {
           <button 
             className="analyze-button"
             onClick={analyzeScript}
+            disabled={!selectedScript}
           >
             분석 시작
           </button>
