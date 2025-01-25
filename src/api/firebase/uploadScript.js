@@ -1,4 +1,4 @@
-import { collection, addDoc, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore';
+import { collection, query, where, getDocs, deleteDoc, doc, setDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
 /**
@@ -16,6 +16,9 @@ export const uploadScript = async (scriptData, scriptName) => {
     const querySnapshot = await getDocs(q);
     const currentVersion = querySnapshot.size + 1;
 
+    // 문서 ID 생성
+    const documentId = `${scriptName}_${currentVersion}`;
+
     // 스크립트 데이터에 메타데이터 추가
     const scriptWithMetadata = {
       ...scriptData,
@@ -24,9 +27,10 @@ export const uploadScript = async (scriptData, scriptName) => {
       uploadedAt: new Date().toISOString(),
     };
 
-    // Firestore에 데이터 업로드
-    const docRef = await addDoc(collection(db, 'scripts'), scriptWithMetadata);
-    return docRef.id;
+    // Firestore에 데이터 업로드 (setDoc 사용)
+    const docRef = doc(db, 'scripts', documentId);
+    await setDoc(docRef, scriptWithMetadata);
+    return documentId;
 
   } catch (error) {
     console.error('Error uploading script:', error);

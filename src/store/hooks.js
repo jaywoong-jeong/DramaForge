@@ -9,7 +9,7 @@ export function useScriptAnalysis() {
   const [, setAnalysisStatus] = useAtom(analysisStatusAtom);
 
   const analyzeScript = async () => {
-    if (!script) return;
+    if (!script) return null;
 
     try {
       setAnalysisStatus({ isAnalyzing: true, error: null });
@@ -24,8 +24,12 @@ export function useScriptAnalysis() {
       setAnalysisResult(analysis);
       
       setAnalysisStatus({ isAnalyzing: false, error: null });
+      
+      // 분석 결과 반환
+      return analysis;
     } catch (error) {
       setAnalysisStatus({ isAnalyzing: false, error: error.message });
+      throw error;
     }
   };
 

@@ -1,5 +1,5 @@
 import { useAtom } from 'jotai';
-import { scriptAtom, currentSceneAtom, editorHighlightAtom, selectedScriptAtom, isCompareModeAtom } from '../../store/atoms';
+import { scriptAtom, currentSceneAtom, editorHighlightAtom, selectedScriptAtom, isCompareModeAtom, currentVersionAtom, analysisResultAtom } from '../../store/atoms';
 import ScriptControls from './ScriptControls';
 import EditorControls from './EditorControls';
 import CompareView from './CompareView';
@@ -7,14 +7,17 @@ import '../../styles/components/editor.css';
 import { uploadScript, deleteScript } from '../../api/firebase/uploadScript';
 import { useEffect, useState } from 'react';
 import { fetchScriptList, fetchScriptByTitle } from '../../api/firebase/fetchScript';
+import { fetchAnalysis } from '../../api/firebase/fetchAnalysis';
 
 function ScriptEditor() {
   const [script, setScript] = useAtom(scriptAtom);
   const [currentScene, setCurrentScene] = useAtom(currentSceneAtom);
   const [highlight] = useAtom(editorHighlightAtom);
   const [selectedScript, setSelectedScript] = useAtom(selectedScriptAtom);
+  const [selectedScriptVersion, setSelectedScriptVersion] = useAtom(currentVersionAtom);
   const [isCompareMode] = useAtom(isCompareModeAtom);
   const [availableScripts, setAvailableScripts] = useState(['대본을 선택해주세요']);
+  const [, setAnalysisResult] = useAtom(analysisResultAtom);
 
   /*
     const AVAILABLE_SCRIPTS = [
@@ -47,6 +50,18 @@ function ScriptEditor() {
         try {
           const scriptData = await fetchScriptByTitle(selectedScript);
           setScript(scriptData);
+          
+          // 분석 결과가 있으면 가져오기
+          if (scriptData.isAnalyzed && scriptData.analysisId) {
+            try {
+              const analysisData = await fetchAnalysis(scriptData.analysisId);
+              setAnalysisResult(analysisData);
+            } catch (error) {
+              console.error('분석 결과를 불러오는데 실패했습니다:', error);
+            }
+          } else {
+            setAnalysisResult(null);
+          }
         } catch (error) {
           console.error('스크립트를 불러오는데 실패했습니다:', error);
           alert('스크립트를 불러오는데 실패했습니다.');
@@ -55,7 +70,7 @@ function ScriptEditor() {
     };
     
     loadScript();
-  }, [selectedScript, setScript]);
+  }, [selectedScript, setScript, setAnalysisResult]);
 
   if (!script) return <div className="editor-panel">Loading...</div>;
 
@@ -166,20 +181,19 @@ function ScriptEditor() {
       try {
         const scriptData = JSON.parse(e.target.result);
         const scriptName = file.name.replace('.json', '');
-        
-        // 현재 선택된 스크립트 초기화 (같은 이름의 스크립트 업로드를 위해)
-        setSelectedScript('대본을 선택해주세요');
-        setScript(null);
+        const scriptVersion = scriptData.version;
         
         // Firebase에 업로드
         await uploadScript(scriptData, scriptName);
         
+        // 로컬 상태 업데이트
+        setScript(scriptData);
+        setSelectedScript(scriptName);
+        setSelectedScriptVersion(scriptVersion);
+        
         // 스크립트 목록 다시 불러오기
         const updatedScripts = await fetchScriptList();
         setAvailableScripts(updatedScripts);
-        
-        // 새로 업로드된 스크립트 선택
-        setSelectedScript(scriptName);
         
         alert('스크립트가 성공적으로 업로드되었습니다.');
       } catch (error) {
@@ -201,7 +215,7 @@ function ScriptEditor() {
         const updatedScripts = await fetchScriptList();
         setAvailableScripts(updatedScripts);
         
-        // 상태 초기화 (null 대신 기본값으로 설정)
+        // 상태 초기화
         setScript(null);
         setSelectedScript('대본을 선택해주세요');
         setCurrentScene(-1);

@@ -7,10 +7,13 @@ import {
   currentSceneAtom, 
   editorHighlightAtom, 
   scriptAtom,
-  selectedScriptAtom
+  selectedScriptAtom,
+  currentVersionAtom
 } from '../../store/atoms';
 import { useScriptAnalysis } from '../../store/hooks';
 import { calculateTotalTime, calculateSceneTime, formatTime } from '../../services/analysis/timeAnalyzer';
+import { uploadAnalysis } from '../../api/firebase/uploadAnalysis';
+import { updateScript } from '../../api/firebase/updateScript';
 
 import CharacterAnalysis from './characters/CharacterAnalysis';
 import PlotAnalysis from './plot/PlotAnalysis';
@@ -32,7 +35,7 @@ function AnalysisPanel() {
   const [totalTime, setTotalTime] = useState(null);
   const [currentSceneTime, setCurrentSceneTime] = useState(null);
   const [selectedScript, setSelectedScript] = useAtom(selectedScriptAtom);
-
+  const [selectedScriptVersion, setSelectedScriptVersion] = useAtom(currentVersionAtom);
   useEffect(() => {
     if (script && analysisResult) {
       calculateTotalTime(script).then(time => {
@@ -48,6 +51,35 @@ function AnalysisPanel() {
       });
     }
   }, [script, analysisResult, currentScene]);
+
+  const handleAnalyzeScript = async () => {
+    if (!selectedScript) {
+      console.error('No script selected');
+      return;
+    }
+
+    try {
+      console.log("분석 시작");
+      const analysis = await analyzeScript();
+      
+      if (analysis) {
+        console.log("분석 결과 업로드 시작");
+        const analysisId = await uploadAnalysis(analysis);
+        
+        console.log("스크립트 문서 업데이트 시작", {
+          scriptName: selectedScript,
+          scriptVersion: selectedScriptVersion,
+          analysisId: analysisId
+        });
+        
+        await updateScript(selectedScript, selectedScriptVersion, analysisId, true);
+        
+        console.log("분석 및 저장 완료");
+      }
+    } catch (error) {
+      console.error('Error during analysis and upload:', error);
+    }
+  };
 
   if (!script) {
     return (
@@ -74,7 +106,7 @@ function AnalysisPanel() {
     );
   }
 
-  if (!analysisResult) {
+  if (!analysisResult && (!script.isAnalyzed || !script.analysisId)) {
     return (
       <div className="analysis-panel">
         <div className="analysis-start-container">
@@ -82,17 +114,20 @@ function AnalysisPanel() {
           <p>대본의 전체적인 구조와 각 장면을 상세히 분석합니다.</p>
           <button 
             className="analyze-button"
-            onClick={analyzeScript}
+            onClick={handleAnalyzeScript}
             disabled={!selectedScript}
           >
             분석 시작
           </button>
+          {!selectedScript && (
+            <p className="error-message">선택된 스크립트가 없습니다.</p>
+          )}
         </div>
       </div>
     );
   }
 
-  const sceneAnalysis = analysisResult.sceneAnalyses[currentScene];
+  //const sceneAnalysis = analysisResult.sceneAnalyses[currentScene];
 
   const handleUnitClick = ({ startLine, endLine, unitId }) => {
     setSelectedUnitId(unitId);
