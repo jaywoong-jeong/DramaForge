@@ -11,6 +11,7 @@ import {
 } from '../../store/atoms';
 import { useEffect, useState } from 'react';
 import '../../styles/components/editor.css';
+import { fetchScriptVersions, fetchScriptVersion } from '../../api/firebase/fetchScript';
 
 // 테스트용 버전 데이터 수정
 const TEST_VERSIONS = [
@@ -29,21 +30,41 @@ function EditorControls() {
   const [previousVersion, setPreviousVersion] = useAtom(previousVersionAtom);
   const [isCompareMode, setIsCompareMode] = useAtom(isCompareModeAtom);
   const [showVersionMenu, setShowVersionMenu] = useState(false);
+  const [availableVersions, setAvailableVersions] = useState([]);
 
   useEffect(() => {
-    loadScript(selectedScript, currentVersion);
-    setVersions(TEST_VERSIONS);
-  }, [selectedScript, currentVersion]);
+    const loadVersions = async () => {
+      if (selectedScript && selectedScript !== '대본을 선택해주세요') {
+        try {
+          const versions = await fetchScriptVersions(selectedScript);
+          setAvailableVersions(versions);
+          // 초기 버전 설정
+          if (versions.length > 0) {
+            setCurrentVersion(versions[0].version);
+          }
+        } catch (error) {
+          console.error('버전 목록을 불러오는데 실패했습니다:', error);
+        }
+      }
+    };
 
-  const loadScript = async (scriptName, version) => {
-    try {
-      const response = await fetch(`/scripts/${scriptName}.json`);
-      const data = await response.json();
-      setScript(data);
-    } catch (err) {
-      console.error('스크립트 로드 실패:', err);
-    }
-  };
+    loadVersions();
+  }, [selectedScript]);
+
+  useEffect(() => {
+    const loadScriptVersion = async () => {
+      if (selectedScript && selectedScript !== '대본을 선택해주세요' && currentVersion) {
+        try {
+          const scriptData = await fetchScriptVersion(selectedScript, currentVersion);
+          setScript(scriptData);
+        } catch (error) {
+          console.error('스크립트 버전을 불러오는데 실패했습니다:', error);
+        }
+      }
+    };
+
+    loadScriptVersion();
+  }, [selectedScript, currentVersion, setScript]);
 
   const handleSave = async () => {
     try {
@@ -76,17 +97,14 @@ function EditorControls() {
           <div className="version-select-group">
             <label>Version:</label>
             <select
-              value={`${selectedScript}-${currentVersion}`}
-              onChange={(e) => {
-                const [script, version] = e.target.value.split('-');
-                setSelectedScript(script);
-                setCurrentVersion(Number(version));
-              }}
+              value={currentVersion}
+              onChange={(e) => setCurrentVersion(Number(e.target.value))}
               className="script-select"
+              disabled={!selectedScript || selectedScript === '대본을 선택해주세요'}
             >
-              {TEST_VERSIONS.map(v => (
-                <option key={`${v.script}-${v.version}`} value={`${v.script}-${v.version}`}>
-                  {v.script} (v{v.version})
+              {availableVersions.map(v => (
+                <option key={v.id} value={v.version}>
+                  v{v.version} ({new Date(v.uploadedAt).toLocaleDateString()})
                 </option>
               ))}
             </select>

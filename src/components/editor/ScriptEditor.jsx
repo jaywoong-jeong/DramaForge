@@ -1,6 +1,6 @@
 import { useAtom } from 'jotai';
 import { scriptAtom, currentSceneAtom, editorHighlightAtom, selectedScriptAtom, isCompareModeAtom, currentVersionAtom, analysisResultAtom } from '../../store/atoms';
-import ScriptControls from './ScriptControls';
+//import ScriptControls from './ScriptControls';
 import EditorControls from './EditorControls';
 import CompareView from './CompareView';
 import '../../styles/components/editor.css';
@@ -50,18 +50,7 @@ function ScriptEditor() {
         try {
           const scriptData = await fetchScriptByTitle(selectedScript);
           setScript(scriptData);
-          
-          // 분석 결과가 있으면 가져오기
-          if (scriptData.isAnalyzed && scriptData.analysisId) {
-            try {
-              const analysisData = await fetchAnalysis(scriptData.analysisId);
-              setAnalysisResult(analysisData);
-            } catch (error) {
-              console.error('분석 결과를 불러오는데 실패했습니다:', error);
-            }
-          } else {
-            setAnalysisResult(null);
-          }
+
         } catch (error) {
           console.error('스크립트를 불러오는데 실패했습니다:', error);
           alert('스크립트를 불러오는데 실패했습니다.');
@@ -70,7 +59,25 @@ function ScriptEditor() {
     };
     
     loadScript();
-  }, [selectedScript, setScript, setAnalysisResult]);
+  }, [selectedScript, setScript]);
+
+  useEffect(() => {
+    const loadAnalysis = async () => {
+    if (script.isAnalyzed && script.analysisId) {
+      console.log(script.analysisId);
+      try {
+        const analysisData = await fetchAnalysis(script.analysisId);
+        setAnalysisResult(analysisData);
+      } catch (error) {
+          console.error('분석 결과를 불러오는데 실패했습니다:', error);
+        }
+      } else {
+        setAnalysisResult(null);
+      }
+    };
+
+    loadAnalysis();
+  }, [script]);
 
   if (!script) return <div className="editor-panel">Loading...</div>;
 
@@ -262,18 +269,14 @@ function ScriptEditor() {
             </div>
           </div>
           
-        {!selectedScript ? (
-          <>
-          </>
-          
-        ) : (
+        {selectedScript && (
         <div className="editor-main-content">
           <EditorControls />
           <div className="script-header">
             <div className="header-content">
               <h2>
                 {script.title || selectedScript}
-                {script?.version && <span className="version-tag">v{script.version}</span>}
+                {script?.version && <span className="version-tag"> v{script.version}</span>}
               </h2>
               <div className="header-controls">
                 <button 

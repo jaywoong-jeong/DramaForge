@@ -73,3 +73,63 @@ export const fetchScriptByTitle = async (titleOrScript) => {
     throw error;
   }
 };
+
+/**
+ * 특정 스크립트의 모든 버전을 가져오는 함수
+ * @param {string} title - 스크립트 제목
+ * @returns {Promise<Array>} 버전 목록
+ */
+export const fetchScriptVersions = async (title) => {
+  try {
+    const scriptsRef = collection(db, 'scripts');
+    // 단순화된 쿼리: title만으로 필터링
+    const q = query(
+      scriptsRef,
+      where('title', '==', title)
+    );
+    
+    const querySnapshot = await getDocs(q);
+    const versions = querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+
+    // 클라이언트 측에서 버전순으로 정렬
+    versions.sort((a, b) => b.version - a.version);
+    
+    return versions;
+  } catch (error) {
+    console.error('Error fetching script versions:', error);
+    throw error;
+  }
+};
+
+/**
+ * 특정 버전의 스크립트를 가져오는 함수
+ * @param {string} title - 스크립트 제목
+ * @param {number} version - 스크립트 버전
+ * @returns {Promise<Object>} 스크립트 데이터
+ */
+export const fetchScriptVersion = async (title, version) => {
+  try {
+    const scriptsRef = collection(db, 'scripts');
+    const q = query(
+      scriptsRef,
+      where('title', '==', title),
+      where('version', '==', version)
+    );
+    
+    const querySnapshot = await getDocs(q);
+    if (querySnapshot.empty) {
+      throw new Error(`버전 ${version}의 스크립트를 찾을 수 없습니다.`);
+    }
+    
+    return {
+      ...querySnapshot.docs[0].data(),
+      id: querySnapshot.docs[0].id
+    };
+  } catch (error) {
+    console.error('Error fetching script version:', error);
+    throw error;
+  }
+};
