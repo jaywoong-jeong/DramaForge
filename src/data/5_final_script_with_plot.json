@@ -1,0 +1,4072 @@
+{
+  "metadata": {
+    "title": "청   혼",
+    "author": ""
+  },
+  "characters": [
+    {
+      "name": "스쩨빤 스쩨빠노비치 추부꼬프",
+      "description": "지주."
+    },
+    {
+      "name": "나딸리야 스쩨빠노브나",
+      "description": "그의 딸, 25세."
+    },
+    {
+      "name": "이반 바실리예비치 로모프",
+      "description": "추부꼬프의 이웃, 건장하고 살이 쪘지만 대단히 소심한 지주."
+    }
+  ],
+  "acts": [
+    {
+      "act_number": 1,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S1_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "추부꼬프와 로모프(연미복에 흰 장갑을 끼고 들어온다)."
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "그에게 다가가 인사하며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "이게 누구야, 요 귀염둥이! 이반 바실리예비치! 정말 오랜만이야!"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "손을 잡는다"
+                    },
+                    {
+                      "type": "text",
+                      "value": "어이구, 이거야말로 사건인데... 어떻게 지내나?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "고맙습니다. 어르신이야말로 어떻게 지내시는지요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "천사같은 친구로군, 자네 기도 덕분에 이럭저럭 사는 거지. 자, 어서 앉게... 이웃을 잊어버리는 건 정말 안될 일이지, 안 그런가. 요 귀염둥이, 왜 그렇게 딱딱하게 앉아있나? 연미복에다 장갑까지 끼고 말야. 우리 친구가 어디 마실이라도 가는 건가?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아닙니다, 전 그저 여기 들르러 온 겁니다, 스쩨빤 스쩨빠느이치."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그런데 왜 연미복은 입고 왔어? 새해 인사라도 온 것 같잖아!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "스쩨빤 스쩨빠노비치 추부꼬프와 이반 바실리예비치 로모프가 만난다. 오래간만에 재회하면서 서로의 안부를 묻고, 로모프의 연미복과 장갑 차림에 대해 대화를 나눈다.",
+                "entrance_exit": [
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "explicit_enter",
+                    "state_description": "연미복에 흰 장갑을 끼고 있는 로모프와 함께 들어옴."
+                  },
+                  {
+                    "character": "이반 바실리예비치 로모프",
+                    "type": "explicit_enter",
+                    "state_description": "연미복에 흰 장갑을 끼고 추부꼬프와 함께 들어옴."
+                  }
+                ],
+                "plot_tags": [
+                  "#introduction",
+                  "#reunion"
+                ],
+                "topic_tags": [
+                  "#fashion",
+                  "#etiquette",
+                  "#neighbors"
+                ],
+                "mood": "Comedic",
+                "estimated_duration_sec": 45,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "연미복",
+                    "status": "new",
+                    "description": "로모프가 입고 있는 복장.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "new",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 첫 장면.",
+                  "status": "new",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S1_U2",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "저, 사실은, 일이 있어서 왔습니다."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "그의 손을 잡고"
+                    },
+                    {
+                      "type": "text",
+                      "value": "존경하는 스쩨빤 스쩨빠느이치, 제가 어르신을 찾아온 것은, 한 가지 부탁을 드리려구요. 제가 어르신께 도움을 청한 것은 한 두 번이 아니었고, 또 그 때마다 어르신은, 말하자면... 그런데, 저, 죄송합니다, 흥분을 해서요. 물을 좀 마시겠습니다, 스쩨빤 스쩨빠느이치."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "물을 마신다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "옆을 보고"
+                    },
+                    {
+                      "type": "text",
+                      "value": "돈을 꾸러 온 모양이군! 어림없지!"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "그를 보며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "도대체 무슨 일인가, 친구?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "보시다시피, 존경하는 스쩨빠느이치... 죄송합니다, 스쩨빤 존경하옵는... 그러니까, 보시다시피, 제가 너무 흥분을 해서... 간단히 말씀드리면, 오직 어르신 한 분만이 저를 도와주실 수가 있습니다, 물론, 전 아무런 도움도 드린 적이 없고, 또... 어르신의 도움을 청할 자격도 없다고 생각합니다만..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "하 참, 그렇게 얼버무리지 말고 바로 얘길 해보라구! 어서!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프가 스쩨빤 스쩨빠노비치 추부꼬프에게 부탁을 하기 위해 방문했다. 로모프는 약간의 긴장과 흥분 속에 도움을 요청하려 하지만 머뭇거리고, 물을 마시면서 진정하고자 노력한다. 추부꼬프는 잠시 의심하지만 빨리 본론을 이야기하라고 재촉한다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#rising_action",
+                  "#conflict_building"
+                ],
+                "topic_tags": [
+                  "#request",
+                  "#assistance",
+                  "#nervousness"
+                ],
+                "mood": "Tense",
+                "estimated_duration_sec": 60,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "물",
+                    "status": "new",
+                    "description": "로모프가 흥분을 진정시키기 위해 마시는 물.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 입고 있는 복장.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S1_U3",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "예, 지금... 바로 말씀드리겠습니다. 사실은, 어르신의 따님인 나딸리야 스뻬빠노브나에게 청혼을 하려고 왔습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "너무 기뻐서"
+                    },
+                    {
+                      "type": "text",
+                      "value": "아니 이럴 수가! 이반 바실리예비치! 다시 한 번 말해 보시게 - 난 제대로 못 들은 거 같아!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "전 그러니까 청혼을 하러...."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "말을 끊으며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "내 귀염둥이... 난 정말 기쁘네... 그래, 바로 그거였어."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "끌어안고 입을 맞춘다"
+                    },
+                    {
+                      "type": "text",
+                      "value": "오래 전부터 기다렸다구. 내가 늘 생각하던 소원이었다구."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "눈물을 떨구며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "난 언제나 자넬 사랑했지, 암, 내 아들처럼 말야. 신께서 자네에게 현명함과 사랑을 함께 내려주시길... 어쨌든 난 내내 기다렸어... 내가 왜 이러고 서 있지, 멍청이같이? 너무 기뻐서 정신을 잃었어, 아주 정신이 나갔어! 아이고, 난 정말이지... 가서 나따샤를 불러와야지."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "감동되어서"
+                    },
+                    {
+                      "type": "text",
+                      "value": "존경하는 스쩨빤 스쩨빠느이치, 어떻게 생각하십니까, 제가 따님께 허락을 받을 수 있을까요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아니, 자네같은 미남인데... 어떻게 그 애가 거절을 할 수 있겠나! 아마 고양이처럼 사랑에 빠져있을 거야... 잠깐 기다리게!"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "나간다"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프는 나딸리야 스쩨빠노브나에게 청혼하기 위해 방문했다고 밝히며, 스쩨빤 스쩨빠노비치 추부꼬프는 이에 크게 기뻐하며 그를 끌어안고 입을 맞춘다. 추부꼬프는 나딸리야 스쩨빠노브나를 데려오기 위해 자리를 뜬다.",
+                "entrance_exit": [
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "exit",
+                    "state_description": "추부꼬프는 나딸리야 스쩨빠노브나를 데리러 나간다."
+                  }
+                ],
+                "plot_tags": [
+                  "#rising_action",
+                  "#proposal"
+                ],
+                "topic_tags": [
+                  "#marriage",
+                  "#proposal"
+                ],
+                "mood": "Joyful",
+                "estimated_duration_sec": 90,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "물",
+                    "status": "continuing",
+                    "description": "로모프가 흥분을 진정시키기 위해 마시는 물.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 입고 있는 복장.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "scene_number": 2,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S2_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "로모프 (혼자다)."
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "추워라... 꼭 시험을 볼 때처럼 전신이 떨려오는군. 중요한 건 결정해야 된다는 거야. 마냥 생각만 하고, 주저하고, 떠들기만 하면서 이상적인 사랑을 기다리다간 영원히 결혼을 못하고 말 거야... 부르르!... 어이구 추워라! 나딸리야 스쩨빠노브나는 괜찮은 안주인이고, 똑똑하고, 교육도 받았어... 더 필요한 게 뭐가 있겠어? 그런데 흥분 때문인가 귓가가 웅웅거리는데."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "물을 마신다"
+                    },
+                    {
+                      "type": "text",
+                      "value": "결혼을 해야돼... 첫째, 내 나이 서른 다섯, 한 마디로 위험한 나이라구. 둘째로, 나한테는 정상적이고 규칙적인 생활이 필요해... 난 심장에 문제가 있어, 항상 가슴이 뛴단 말야, 성미가 급해서 항상 너무 흥분을 잘해... 지금도 입술이 떨리고 오른쪽 옆구리가 부르르 떨리고 있어...하지만 가장 무서운 건 - 꿈이야. 겨우 자리에 누워서 잠이 들라치면, 꼭 왼쪽 옆구리에서 뭔가 - 경련이! 일어나서 바로 어깨를 통해 머리를 친다구... 미친놈처럼 벌떡 일어나서 왔다갔다하다가 다시 눕지만, 잠만 들려고 하면 옆구리가 다시 요동을 치고! 하룻밤에도 수십 번이니...."
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프는 자신이 결혼해야 한다고 결심하며 나딸리야 스쩨빠노브나가 좋은 아내감이라고 생각한다. 그는 자신의 건강 문제와 나이에 대한 우려를 밝혔으며, 혼자서 불안과 추위에 떨고 있다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#internal_conflict",
+                  "#self_reflection"
+                ],
+                "topic_tags": [
+                  "#marriage",
+                  "#health",
+                  "#anxiety"
+                ],
+                "mood": "Anxious",
+                "estimated_duration_sec": 120,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "물",
+                    "status": "continuing",
+                    "description": "로모프가 긴장된 상태를 풀기 위해 마시는 물.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 입고 있는 복장.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 1,
+      "scenes": [
+        {
+          "scene_number": 3,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S3_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "나딸리야 스쩨빠노브나와 로모프"
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "들어온다"
+                    },
+                    {
+                      "type": "text",
+                      "value": "어머나! 당신이셨군요, 그런데 아빠는 장사꾼이 물건을 가지고 왔으니 가보라고 하시잖아요. 안녕하세요, 이반 바실리예비치!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "안녕하십니까, 존경하는 나딸리야 스쩨빠노브나!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송해요, 앞치마에 작업복에... 완두콩을 말리려고 씻던 참이었거든요. 왜 그렇게 발걸음이 뜸하셨어요? 앉으세요...."
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "두 사람 앉는다."
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아침 식사는 하셨어요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "고맙습니다만 벌써 먹었습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "담배 피우세요... 여기 성냥이요... 날씨가 정말 좋아요, 어제는 그렇게 비가 많이 와서, 일꾼들이 하루 종일 놀고 말았지 뭐예요. 풀은 얼마나 베셨어요? 생각 좀 해보세요, 난 욕심을 너무 부려서, 풀밭을 전부 베어버렸는데, 이젠 풀이 썩지나 않을까 걱정을 하는 판이에요. 기다리는 게 나을 뻔했는데. 그런데 이게 뭐예요? 연미복을 입고 오셨잖아요! 이게 어쩐 일이에요? 어디 무도회라도 가시는 건가요? 또 얼굴도 많이 좋아지셨어요... 정말, 왜 그렇게 멋을 부리셨어요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "흥분하며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "존경하는 나딸리야 스쩨빠노브나, 보시다시피... 사실은 당신이 제 얘기를 들어주십사고 부탁하기로 마음을 먹고... 물론 당신은 놀라실 거고, 또 화를 내실지도모르겠지만 난..."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "옆을 보며"
+                    },
+                    {
+                      "type": "text",
+                      "value": "끔찍하게 춥군!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "무슨 일이세요?"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "사이"
+                    },
+                    {
+                      "type": "text",
+                      "value": "말씀하세요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "간단히 말씀드릴 수 있도록 노력하겠습니다. 존경하는 나딸리야 스쩨빠노브나, 당신도 아시다시피, 전 오래 전부터, 아주 어릴 때부터 당신 집안과 친분을 가져왔습니다. 저에게 유산으로 땅을 물려주신 저의 돌아가신 아주머니와 숙부께서는 당신의 아버님과 돌아가신 어머님께 언제나 마음 깊이 존경을 가지고 만나오셨습니다. 로모프 가와 추부꼬프 가는 항상 가장 가까운 사이였고, 친척 같은 관계였다고 말할 수도 있을 겁니다. 더구나, 당신도 아시다시피, 내 토지가 당신 집안 토지와 아주 가깝게 맞닿고 있으니까요. 기억하시겠지만, 저의 쇠풀 마을이 당신의 자작나무골과 경계를 이루고 있지 않습니까?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "저, 말을 끊어서 죄송해요. <저의 쇠풀 마을>이라고 하셨는데... 그게 당신 땅이라구요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제거죠..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어머나, 또! 쇠풀 마을은 우리 거예요, 당신 게 아니라!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 제 겁니다, 존경하는 나딸리야 스쩨빠노브나."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그건 정말 신기한 소리네요. 어디서 그런 얘길 들으셨어요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어디서 듣다뇨? 나는 당신의 자작나무골과 끄실린 물골 사이에 있는 그 쇠풀 마을을 얘기하고 있는 겁니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "네, 바로 거기요... 그건 우리 거예요..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 당신이 잘못 아신 겁니다, 존경하는 나딸리야 스쩨빠노브나, - 거긴 우리 땅입니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "기억해보시죠, 이반 바실리예비치! 그게 당신 땅이 된 게 오래 전의 일인가보죠?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "오래 전이라뇨? 내가 기억하기로는, 그 땅은 언제나 우리 땅이었습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송하지만 말도 안되는 소릴 하고 계시네요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "존경하는 나딸리야 스쩨빠노브나, 그건 문서로도 나와 있습니다. 쇠풀 마을은 언젠가도 논란거리가 된 일이 있었습니다 - 사실이에요; 하지만 지금은 제 땅이라는 걸 모르는 사람이 없어요. 말싸움할 거리가 없다구요. 제 아주머니의 할머니께서 이 풀밭을 당신 아버님의 할아버님 밑에서 일하던 농노들에게 무기한으로 무료 임대를 해주시고, 대신에 그들은 할머님께 벽돌을 구워주었던 겁니다. 당신 아버님의 할아버님의 농부들은 공짜로 초지를 사십 년이나 쓰다보니, 그걸 마치 자기들 땅이라고 자연스럽게 생각하게 된 거죠, 나중에 상황이 변하게 되니까..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신이 말씀하시는 건 전혀 사실과 달라요! 그리고 제 할아버님, 그리고 제 증조부님은, 당신들의 땅이 끄실린 물골까지 닿는 걸로 알고 계셨고 - 그러니까, 쇠풀 마을은 우리 땅이었다구요. 거기 무슨 문제가 있어요? - 이해할 수가 없네요. 정말 열받네!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "이반 바실리예비치 로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제발 부탁이니 내 말을 끝까지 들어보세요! 당신 아버님의 할아버님의 농노들이, 내가 벌써 말씀을 드렸지만, 내 아주머님의 할머님을 위해서 벽돌을 구웠다니까요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "네, 바로 거기요... 그건 우리 거예요..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 당신이 잘못 아신 겁니다, 존경하는 나딸리야 스쩨빠노브나, - 거긴 우리 땅입니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "기억해보시죠, 이반 바실리예비치! 그게 당신 땅이 된 게 오래 전의 일인가보죠?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "오래 전이라뇨? 내가 기억하기로는, 그 땅은 언제나 우리 땅이었습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송하지만 말도 안되는 소릴 하고 계시네요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "존경하는 나딸리야 스쩨빠노브나, 그건 문서로도 나와 있습니다. 쇠풀 마을은 언젠가도 논란거리가 된 일이 있었습니다 - 사실이에요; 하지만 지금은 제 땅이라는 걸 모르는 사람이 없어요. 말싸움할 거리가 없다구요. 제 아주머니의 할머니께서 이 풀밭을 당신 아버님의 할아버님 밑에서 일하던 농노들에게 무기한으로 무료 임대를 해주시고, 대신에 그들은 할머님께 벽돌을 구워주었던 겁니다. 당신 아버님의 할아버님의 농부들은 공짜로 초지를 사십 년이나 쓰다보니, 그걸 마치 자기들 땅이라고 자연스럽게 생각하게 된 거죠, 나중에 상황이 변하게 되니까..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신이 말씀하시는 건 전혀 사실과 달라요! 그리고 제 할아버님, 그리고 제 증조부님은, 당신들의 땅이 끄실린 물골까지 닿는 걸로 알고 계셨고 - 그러니까, 쇠풀 마을은 우리 땅이었다구요. 거기 무슨 문제가 있어요? - 이해할 수가 없네요. 정말 열받네!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제가 문서를 보여드리지요, 나딸리야 스쩨빠노브나!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 당신은 그저 농담을 하시거나 아니면 절 열받게 하시는 거예요... 이럴 수가 있어요! 땅을 거의 삼백 년 동안이나 소유하고 있었는데, 갑자기 나타나서 하는 말이, 우리 땅이 아니다! 이반 바실리예비치, 죄송하지만 난 내 귀를 의심할 지경이에요... 나한텐 쇠풀 마을이 아까울 건 없어요. 그건 전부 다섯 마지기에, 기껏해야 삼백 루블 가치밖에 안 되지만, 부당하다 생각하니 마음이 어지럽네요. 뭐라고 말씀하셔도 좋지만, 부당한 건 참을 수가 없다구요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제발 부탁이니 내 말을 끝까지 들어보세요! 당신 아버님의 할아버님의 농노들이, 내가 벌써 말씀을 드렸지만, 내 아주머님의 할머님을 위해서 벽돌을 구웠다니까요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "할아버지, 할머니, 아주머니... 무슨 소린지 하나도 모르겠어요! 풀밭은 우리 거고, 그게 다예요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "내 거라니까요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "우리 거요! 혹시 당신이 이틀 동안을 증명하든, 연미복을 열 다섯 벌이나 입든, 그 땅은 우리 거라구요, 우리 거, 우리 거요!... 난 당신 걸 갖고 싶은 생각도 없고, 내 걸 잃고 싶지도 않아요... 마음대로 해보세요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나딸리야 스쩨빠노브나, 풀밭은 나한테 필요 없습니다, 다만 난 원칙을 말씀드리는 겁니다. 만약에 필요하시다면 제가 선물로 드릴 수도 있겠습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나야말로 그걸 당신한테 선물할 수 있어요, 그건 내 거니까요!... 이건 정말 이상한 일이네요, 이반 바실리예비치! 이제껏 우린 당신을 좋은 이웃에 친구라고 생각을 해왔고, 작년에도 우리 탈곡기를 빌려드려서, 우리는 십 일월이 돼서야 우리 곡식을 탈곡하게 되었죠, 그런데 당신은 우릴 집시 대하듯 하시네요. 나한테 내 땅을 주신다구요. 미안하지만 이웃으로서 할 얘기가 아니라구요! 정말 철면피같은 말씀을 하고 계신 거예요..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신 말대로라면, 그러니까, 내가 날강도라는 겁니까? 아가씨, 난 남의 땅을 빼앗아 본 일이 없고, 그러니 이런 일로 누구한테도 말 들을 일도 없습니다... "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "급히 물병을 집어 물을 마신다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 쇠풀 마을은 내 겁니다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 우리 거예요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "내 겁니다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아니라니까요! 증명해보이겠어요! 오늘 당장 그 땅의 풀을 베라고 사람들을 보내겠어요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "뭐요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "오늘 우리 일꾼들이 거기에 갈 거라구요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그럼 난 당장에 쫒아버릴 거요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어림없을 걸요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "가슴을 움켜쥐며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 쇠풀 마을은 내 겁니다! 아시겠어요? 내 거라구요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "소리 지르지 마세요! 당신 집에서는 악에 바쳐 소릴 치든 코를 골든 상관없지만, 여기선 정도를 넘지 말아주세요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아가씨, 만약에 가슴이 이렇게 무섭고 고통스럽게 뛰지만 않았다면, 관자놀이에서 핏줄이 고동치지만 않았으면, 당신한테 이런 식으로 얘기하진 않았을 겁니다! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소리친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 쇠풀 마을은 내 겁니다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "우리 거예요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "내 거요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "우리 거예요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "내 거야!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프와 나딸리야 스쩨빠노브나가 만난다. 나딸리야 스쩨빠노브나는 앞치마와 작업복을 입고 로모프를 맞이하며, 그는 결혼 제안을 위해 방문했음을 암시한다. 그러나 두 사람은 쇠풀 마을 소유권에 대해 심각한 논쟁을 시작하고, 그 논쟁은 격해진다.",
+                "entrance_exit": [
+                  {
+                    "character": "나딸리야 스쩨빠노브나",
+                    "type": "enter",
+                    "state_description": "앞치마와 작업복을 입고 완두콩을 말리려던 중 로모프를 맞이한다."
+                  }
+                ],
+                "plot_tags": [
+                  "#introduction",
+                  "#confrontation",
+                  "#misunderstanding"
+                ],
+                "topic_tags": [
+                  "#land_dispute",
+                  "#interpersonal_conflict"
+                ],
+                "mood": "Tense",
+                "estimated_duration_sec": 360,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "new",
+                    "description": "나딸리야 스쩨빠노브나가 완두콩을 말리기 위해 입은 작업복.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "new",
+                    "description": "로모프가 담배를 피기 위해 나딸리야 스쩨빠노브나에게 건네받은 성냥.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 논쟁 중 긴장감 해소를 위해 물을 마심.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용하고 있는 연미복, 나딸리야 스쩨빠노브나가 의문을 가짐.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "scene_number": 4,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S4_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "추부꼬프 등장."
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "들어오면서"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 무슨 일이야? 왜 소리들을 치고 그래?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아빠, 이 양반한테 설명 좀 해주세요, 쇠풀 마을이 누구네 땅이에요? 우리 거예요, 저 사람 거예요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "그에게"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 여보게, 그건 우리 땅이지!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "무슨 말씀을, 스쩨빤 스쩨빠느이치, 그게 어떻게 어르신네 땅입니까? 어르신만큼은 분별이 있으신 줄 알았어요! 제 아주머니의 할머님께서 어르신의 할아버님네 농노들한테 쇠풀 마을을 한시적으로 무료 임대하셨던 겁니다. 농노들은 그 땅을 사십년이나 쓰면서 마치 자기 땅인 양 익숙해졌던 거고, 나중에 상황이 변하게 되니까..."
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 등장하여 나딸리야 스쩨빠노브나와 이반 바실리예비치 로모프 사이의 쇠풀 마을 소유권 논쟁에 가담한다. 나딸리야는 아버지에게 자기 편을 들어줄 것을 요청하고, 추부꼬프는 그 땅이 자기네 소유라고 주장한다. 로모프는 할머니의 시간이 지나면서 생긴 오해라고 반박한다.",
+                "entrance_exit": [
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "enter",
+                    "state_description": "논쟁 중인 나딸리야와 로모프에게 다가가며 질문함."
+                  }
+                ],
+                "plot_tags": [
+                  "#confrontation",
+                  "#escalation"
+                ],
+                "topic_tags": [
+                  "#land_dispute",
+                  "#family_involvement"
+                ],
+                "mood": "Tense",
+                "estimated_duration_sec": 300,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "이반 바실리예비치 로모프가 여전히 소지하고 있을 가능성 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 논쟁 중 긴장감 해소를 위해 옆에 둠.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S4_U2",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "자네, 얘기 좀 들어보게... 농노들이 자네 할머님께 돈을 치르지 않았다 어쨌다 하는데, 당시에 쇠풀 마을이 문제가 많았기 때문이란 걸 자네가 잊고 있는 걸세... 지금이야 온동네 개들도 알고 있지, 그게 우리 땅이라고 말야. 그러니까, 자넨 지도도 안 보았다는 얘기로군!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그럼 그게 제 땅이라는 걸 증명해 보이겠습니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "증명할 수 없을 걸세, 귀여운 친구."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 증명할 겁니다!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 이반 바실리예비치 로모프에게 쇠풀 마을의 소유권 문제에 관한 그의 주장을 반박하며 과거와 도면을 언급한다. 로모프는 자신의 소유권을 증명하겠다고 단호하게 반응한다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#confrontation",
+                  "#escalation",
+                  "#challenge"
+                ],
+                "topic_tags": [
+                  "#land_dispute",
+                  "#property_proof"
+                ],
+                "mood": "Defiant",
+                "estimated_duration_sec": 150,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "이반 바실리예비치 로모프가 여전히 소지하고 있을 가능성 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 논쟁 중 긴장감 해소를 위해 옆에 둠.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S4_U3",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어허, 참, 왜 소리는 치고 그래? 소리치는 걸로는 아무 것도 증명이 안돼. 난 자네 걸 원하지도 않고, 내 걸 잃어버릴 생각도 없네. 무슨 근거로? 사랑하는 친구, 자네가 쇠풀 마을을 가지고 시비를 걸 작정이라면, 난 자네한테 주느니, 그걸 농노들한테 줘버리겠네. 줘버린다구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이해할 수가 없군요! 무슨 권리로 남의 소유물을 주시겠다는 겁니까?"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "스쩨빤 스쩨빠노비치 추부꼬프는 소리친다고 아무 증명이 안 된다고 하며, 이반 바실리예비치 로모프에게 쇠풀 마을을 다른 사람에게 주겠다고 얘기하며 농노들에게 줄 것이라고 강조한다. 로모프는 그 권리에 대해 반문한다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#disagreement",
+                  "#tension_increase"
+                ],
+                "topic_tags": [
+                  "#land_dispute",
+                  "#ownership_rights"
+                ],
+                "mood": "Confrontational",
+                "estimated_duration_sec": 120,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "이반 바실리예비치 로모프가 여전히 소지하고 있을 가능성 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 논쟁 중 긴장감 해소를 위해 옆에 둠.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S4_U4",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나한테 권리가 있는지 없는지 어디 한 번 설명해 보시게. 여보시오, 난 한번도 그따위로 나랑 얘기하는 사람을 본 적이 없어. 이 보라니까, 난 당신보다 갑절은 더 살았으니까, 흥분하지 말고 차근차근 얘기해보란 말야."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아뇨, 당신은 날 바보 취급하면서 비웃고 있어요! 내 땅을 자기 땅이라고 하면서 거기다가 내가 냉정하게 당신한테 인간적으로 얘기하길 원하신단 말이죠! 이웃이라면 그런 식으로 행동하지 않을 겁니다, 스쩨빤 스쩨빠느이치! 당신은 이웃이 아니라 도둑놈이야!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "뭐라구? 당신 뭐라고 했어?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아빠, 당장에 쇠풀 마을로 풀을 베러 가요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "로모프에게"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 뭐라고 말씀하셨는지요, 귀하신 나리?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "쇠풀 마을은 우리 땅이고, 난 넘겨줄 수 없어요, 못해요, 절대로 못줘!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그거야 두고 봅시다! 그게 내 땅이라는 걸 재판정에서 증명해 보이겠어요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "재판정? 나으리께서 재판에 걸어보시겠다 이거지! 해봐! 이제 알겠어, 바로 재판을 걸어서 기회만 노리고 있었구만... 저 쌈닭 근성! 당신네 집안 인간들이 다 재판을 좋아했어! 죄다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "내 집안을 모욕하지 마세요! 로모프가 사람들은 다 정직해서, 어르신 숙부님처럼 공금 횡령으로 재판정에 서 본 사람은 하나도 없습니다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그럼 자네 로모프 가는 전부 미친 놈들이지!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "됐어요, 그만, 그만!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "자네 할아버진 알콜 중독이었고, 어린 누이, 거 나스따씨야 미하일로브나는 건          축가 놈을 만나서 도망질을 쳤지..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어르신 어머님은 곱사등이셨죠. "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "가슴을 움켜쥐며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 아, 옆구리에 경련이... 머리까지 올라왔어... 아이구 아버지!... 물을!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "자네 아버진 노름꾼에 식충이였어!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아줌마는 세상에 드문 허풍장이였고!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "왼쪽 다리가 마비됐어... 당신들은 흉계를 꾸미고 있어.... 아, 가슴이야!... 이젠 비          밀도 아니지만, 당신은 선거 전에... 눈에서 불꽃이 튀네... 내 모자가 어디 갔지?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "저열하긴! 거짓말쟁이! 가증스런 자식!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신이야말로, 어 그래, 약아빠지고, 위선자에 교활한 놈이야! 아무렴!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "여깄군, 모자가... 가슴이... 어디로 가야 되지? 문이 어디야? 아!... 죽을 것 같아... 다리가 후들거려... "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "문으로 다가간다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "그의 뒤에 대고"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 그 다리를 더 이상 내 집에 들여놓지 말아!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "재판 걸어 봐요! 두고 보자구요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "로모프는 비틀거리면서 나간다."
+                }
+              ],
+              "analysis": {
+                "summary": "사건은 폭발적인 논쟁으로 절정에 이른다. 스쩨빤 스쩨빠노비치 추부꼬프와 이반 바실리예비치 로모프는 서로의 가족과 개인을 비난하며 격앙된 언쟁을 벌이고, 나딸리야 스쩨빠노브나는 절정의 긴장 속에서 로모프를 다그친다. 마지막에 로모프는 고통과 두통을 호소하며 물을 찾고 비틀거리며 퇴장한다.",
+                "entrance_exit": [
+                  {
+                    "character": "이반 바실리예비치 로모프",
+                    "type": "exit",
+                    "state_description": "비틀거리며 고통스러워하며 퇴장함."
+                  }
+                ],
+                "plot_tags": [
+                  "#climax",
+                  "#escalation",
+                  "#conflict"
+                ],
+                "topic_tags": [
+                  "#family_insults",
+                  "#land_dispute",
+                  "#legal_threats"
+                ],
+                "mood": "Explosive",
+                "estimated_duration_sec": 180,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "이반 바실리예비치 로모프가 여전히 소지하고 있을 가능성 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 언쟁 중 긴장감 해소를 위해 옆에 둠.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 장갑.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "new",
+                    "description": "로모프가 나가기 전에 찾던 모자.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 안쪽, 실내의 장면이 계속됨.",
+                  "status": "same",
+                  "reusability_note": "무대는 실내이며 고정적인 배경으로 계속 사용할 수 있음."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "scene_number": 5,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S5_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "나딸리아, 츄부꼬프"
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제기랄!"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "화가 나서 왔다갔다한다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그런 망할 자식이 있어? 그러구선 무슨 이웃사촌이 어쩌구?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "더러운 놈! 콩밭의 허수아비 같은 녀석!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "추물 같은 게! 남의 땅이나 가로채려 하고, 거기다 싸움까지 걸어."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이런 도깨비 같은, 이런, 그 뭐야, 야맹증 환자같은 자식이 어디다 청혼할 생각을 해! 안 그러냐? 청혼이라니!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "추부꼬프와 나딸리야 스쩨빠노브나는 이반 바실리예비치 로모프에 대한 불만을 쏟아냄. 그들은 로모프의 행동을 비난하고, 그의 청혼 시도에 대해 경멸적으로 논의함.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#conflict",
+                  "#character_attack"
+                ],
+                "topic_tags": [
+                  "#marriage",
+                  "#neighbor_relations"
+                ],
+                "mood": "Frustrated",
+                "estimated_duration_sec": 90,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 퇴장 시 소지하고 있는 것으로 추정.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 퇴장 전 사용한 것으로 보임. 현재는 무대에 두었을 가능성 있음.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중인 상태로 비추어짐.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 상태로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "퇴장 시 로모프가 소지하고 있을 것.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 실내 장면이 지속됨.",
+                  "status": "same",
+                  "reusability_note": "지속적으로 같은 실내 배경을 사용 가능함."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S5_U2",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "무슨 청혼요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그렇다니까! 너한테 청혼을 하러 왔었다니까."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "청혼요? 나한테요? 아깐 왜 나한테 그 얘길 안 하셨어요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그래서 그렇게 연미복까지 입고 왔다니까! 쏘세지같은 놈! 버섯돌이!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "나딸리야 스쩨빠노브나와 스쩨빤 스쩨빠노비치 추부꼬프가 이반 바실리예비치 로모프의 청혼에 대해 이야기하며, 청혼 사실을 나딸리야가 처음 알게 됨. 추부꼬프는 로모프의 차림새를 비꼬며 조롱함.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#revelation",
+                  "#comedic_relief"
+                ],
+                "topic_tags": [
+                  "#marriage_proposal",
+                  "#attire"
+                ],
+                "mood": "Comedic",
+                "estimated_duration_sec": 60,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 퇴장 시 소지한 것으로 계속 추정.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "로모프가 퇴장 전 사용한 상태로 현재 무대에 두었을 가능성 있음.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중인 것으로 이전 상태를 유지.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용한 상태로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "퇴장 시 로모프가 소지하고 있을 것.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 실내 장면이 지속됨.",
+                  "status": "same",
+                  "reusability_note": "지속적으로 같은 실내 배경을 사용 가능함."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S5_U3",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나한테요? 청혼을요? 아이구머니! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소파에 쓰러져 신음한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 그 사람을데리고 와요!  데려와요! 아이구! 데려와요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "누굴 데리고 와?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "빨리요, 빨리! 바보같이! 빨리요! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "히스테릭해진다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "무슨 일이냐? 왜 그래? "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "자기 머리를 움켜쥔다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 난 왜 이렇게 재수가 없을까! 권총자살할 거야! 목을 매달고 싶어! 왜 날 괴롭히는 거야!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나 죽는다! 데리고 와요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "제기랄! 기다려. 소리 지르지마! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "뛰어 나간다"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "------------"
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "혼자 남아 신음하며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 왜 그런 짓을! 어서 데려와요! 빨리 데려와요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "------------"
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "뛰어들어오며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 지금 오고 있다, 젠장할! 아이고! 네가 얘기해라, 난 못하겠다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "신음하여"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 데려와요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "소리친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 오고 있다니까! 이런! 노처녀 애비노릇하기 정말 치사하고 아니꼽다. 칵 목을 찔러 자살하고 싶어! 사람을 욕하고, 쫓아내고, 다 네가 이렇게 만든 거 아니냐... 네가!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아냐, 아빠야!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그래, 다 내 잘못이다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "로모프, 문간에 보인다."
+                },
+                {
+                  "type": "direction",
+                  "text": "자, 이제 네가 얘기해! (나간다)"
+                }
+              ],
+              "analysis": {
+                "summary": "나딸리야 스쩨빠노브나가 이반 바실리예비치 로모프의 청혼을 듣고 충격을 받아 히스테리 상태에 빠진다. 스쩨빤 스쩨빠노비치 추부꼬프는 그녀를 진정시키려 애쓰며 로모프를 데리러 나갔다가 다시 들어온다. 나딸리야는 계속해서 로모프를 데려오라고 외치고, 추부꼬프는 청혼 상황에 대한 스트레스를 발산한다. 로모프가 문간에 모습을 드러낸다.",
+                "entrance_exit": [
+                  {
+                    "character": "이반 바실리예비치 로모프",
+                    "type": "explicit_enter",
+                    "state_description": "문간에 나타남."
+                  },
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "exit",
+                    "state_description": "로모프를 데리러 나감."
+                  },
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "enter",
+                    "state_description": "로모프와 함께 돌아옴."
+                  }
+                ],
+                "plot_tags": [
+                  "#conflict",
+                  "#emotion_explosion"
+                ],
+                "topic_tags": [
+                  "#marriage_proposal",
+                  "#family_pressure"
+                ],
+                "mood": "Tense",
+                "estimated_duration_sec": 90,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 다시 입장한 상태에서 가지고 있을 가능성이 높음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "무대에 그대로 두어졌을 것으로 추정됨.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 여전히 착용 중으로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 여전히 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 실내 장면 지속.",
+                  "status": "same",
+                  "reusability_note": "계속 같은 실내 배경 사용 가능함."
+                }
+              }
+            }
+          ]
+        },
+        {
+          "scene_number": 6,
+          "setting": "로모프, 나딸리아",
+          "units": [
+            {
+              "unit_id": "A1_S6_U1",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "극도로 힘이 빠져 들어오며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 심각한 심장박동... 다리는 후들거리고....옆구리는 경련이 나고...."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송해요, 이반 바실리예비치, 우리가 너무 심했죠... 전 지금 생각난 건데....그 쇠풀 마을은 사실 당신 거예요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "가슴이 너무 뛰어....내 쇠풀.... 아, 눈거풀이 떨린다...."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신, 당신의 쇠풀 마을이예요... 앉으세요..."
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "둘 앉는다."
+                },
+                {
+                  "type": "direction",
+                  "text": "저희가 틀렸어요..."
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "전 다만 원칙에 의거해서... 그 땅은 제겐 쓸모도 없어요. 다만 원칙이 중하니까..."
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프는 몸에 극도로 힘이 빠진 상태로 들어오고, 나딸리야 스쩨빠노브나는 사과하며 '쇠풀 마을'이 로모프의 것이라고 인정한다. 두 사람은 앉으며 대화를 이어간다.",
+                "entrance_exit": [
+                  {
+                    "character": "이반 바실리예비치 로모프",
+                    "type": "explicit_enter",
+                    "state_description": "극도로 힘이 빠진 상태로 들어옴."
+                  }
+                ],
+                "plot_tags": [
+                  "#conflict_resolution",
+                  "#apology"
+                ],
+                "topic_tags": [
+                  "#land_ownership",
+                  "#misunderstanding"
+                ],
+                "mood": "Reconciliatory",
+                "estimated_duration_sec": 120,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 높음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "무대에 그대로 두어졌을 것으로 추정됨.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중으로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 실내 장면 지속.",
+                  "status": "same",
+                  "reusability_note": "계속 같은 실내 배경 사용 가능함."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S6_U2",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그래요, 원칙... 자, 우리 뭐든 다른 얘길 해요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "적어도 저한테는 증거가 있습니다. 내 아주머님의 할머니가 당신의 아버님의 할아버지네 농부들한테...."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "aside",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "예, 예, 알았어요... "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "방백"
+                    },
+                    {
+                      "type": "direction",
+                      "value": "그에게"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 이제 곧 사냥을 나가시겠네요?"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "나딸리야 스쩨빠노브나와 이반 바실리예비치 로모프가 서로의 의견을 바꿔서 다른 화제로 대화를 시도하지만 로모프는 여전히 과거의 갈등을 언급한다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#ongoing_tension",
+                  "#attempt_to_change_topic"
+                ],
+                "topic_tags": [
+                  "#property_dispute",
+                  "#hunting"
+                ],
+                "mood": "Tense",
+                "estimated_duration_sec": 60,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 높음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "무대에 그대로 두어졌을 것으로 추정됨.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중으로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 실내 장면 지속.",
+                  "status": "same",
+                  "reusability_note": "계속 같은 실내 배경 사용 가능함."
+                }
+              }
+            },
+            {
+              "unit_id": "A1_S6_U3",
+              "content": [
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "네 꿩사냥이요, 존경하는 나딸리야 스쩨빠노브나. 추수를 끝내고 갈 생각입니다. 아차, 들으셨어요? 생각해 보세요, 아주 불행한 일입니다. 저의 애견 우가다이가 다리를 절어요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이런 세상에! 왜 그랬죠?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "모르겠어요... 삐었거나 아니면 다른 개들한테 물린 모양입니다... "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "한숨을 쉬면서"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 돈 문제를 떠나서 정말 좋은 개입니다! 미로노프에게 125루블이나 주고 샀어요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "비싸게 주고 사셨네요, 이반 바실리예비치."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아주 싼 가격이라고 생각하는데요. 정말 훌륭한 개입니다."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아빠는 옷까따이를 85루블을 주고 사셨는데, 어느 모로 보나 우가다이보다 낫잖아요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "옷까따이가 우가다이보다 낫다고요? 무슨 말씀을! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "웃으며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 옷까따이가 우가다이보다 낫다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "물론, 훨씬 낫죠! 옷까따이는 사실 어리고, 아직 성견은 아니지만, 등치나 움직임에선 볼차녜쯔끼한테도 더 나은 개가 없다구요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송합니다만 나딸리야 스쩨빠노브나, 잘 모르시는가 본데, 그 녀석은 아래턱이 짧습니다. 일반적으로 턱이 짧은 개는 사냥을 못해요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "짧아요? 생전 처음 듣는 소리예요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "틀림없습니다, 아래턱이 위보다 짧아요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아니 재 봤어요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그럼요. 물론 짐승을 몰 때까지는 쓸모가 있죠, 하지만 만약 자, 물어라 하면, 아마 겨우..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "첫째, 우리 옷까따이는 혈통이 우수하고, 목에 긴 털이 나있어요, 자쁘랴가야와 스따메스끼의 아들이라구요, 그런데 댁의 무루고뻬고브이는 혈통도 의심스러워요... 거기다가 여윈 말처럼 늙고 못생겼다구요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "늙었다, 좋아요 하지만 당신네 옷까따이를 다섯 마리를 준다고 해도 안 바꾸겠어요. 그럴 수가 없죠! 우가다이는 한 마디로 ｢개｣입니다. 하지만 옷까따이는.... 참, 다투기도 부끄럽군... 당신네 옷까따이 같은 개는 어느 개장사에게서나 살 수 있다구요. 쌔고 쌨다구요. 이십 오 루블이면 최고값이죠."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신, 이반 바실리예비치, 오늘 정말 이상한 소리만 하고 앉으셨네요. 쇠풀 마을이 자기 땅이라느니, 우가다이가 옷까따이보다 낫다는 생각이나 하고 있으니... 생각과 다른 말을 하는 사람을 나는 좋아하지 않아요. 당신도 잘 알고 계시잖아요, 옷까따이가 당신 개 - 그 바보 같은 우가다이보다 백배는 낫다는 걸요... 왜 딴지를 걸죠?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나딸리아 스쩨빠노브나, 내 보기엔, 당신이 절 장님이나 바보 취급을 하시는군요. 옷까따이가 아래턱이 짧다는 사실을 인정하세요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "말도 안돼요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "짧다니까요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "소리친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 아니라니까!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "왜 소리를 치십니까, 아가씨?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "왜 그런 허튼 소리를 하는 거죠? 불쾌하기 짝이 없어요! 전부 받아들일 수가 없어요! 당신의 우가다이는 총으로 쏴 죽일 때가 됐는데, 당신은 그놈을 옷까따이에 비교를 하시는군요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송합니다, 전 더 이상 이런 말장난을 못하겠어요. 가슴이 쿵쾅거려서."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "알겠더군요, 남보다 쌈질하기 좋아하는 사냥꾼들은 이해력이 훨씬 뒤떨어져요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아가씨, 제발 부탁입니다. 입을 다물어 주세요. 가슴이 터질 것 같아요..."
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소리친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 입 닥치라구요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "조용히 못해요! 우리 옷까따이가 당신네 우가다이보다 백배는 낫다고 자백할 때까지는요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "백 배나 모자라죠! 당신네 옷까따이는 뒈졌으면 좋겠어... 관자놀이.. 눈... 어깨..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신네 그 바보 같은 우가다이는 숨쉴 필요가 없어요, 왜냐면 이전에 벌써 뒈졌거든!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "울며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 입 닥쳐요! 심장이 터질 지경이에요!!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "못해요!"
+                    }
+                  ]
+                }
+              ],
+              "analysis": {
+                "summary": "이반 바실리예비치 로모프와 나딸리야 스쩨빠노브나는 개의 우수성을 두고 극심한 말다툼을 벌인다.",
+                "entrance_exit": [],
+                "plot_tags": [
+                  "#intensifying_conflict",
+                  "#miscommunication"
+                ],
+                "topic_tags": [
+                  "#dog_comparison",
+                  "#animal_pedigree"
+                ],
+                "mood": "Heated",
+                "estimated_duration_sec": 90,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 높음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "무대에 그대로 두어졌을 것으로 추정됨.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중으로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 동일한 실내 장면 지속.",
+                  "status": "same",
+                  "reusability_note": "계속 같은 실내 배경 사용 가능함."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "act_number": 1,
+      "scenes": [
+        {
+          "scene_number": 7,
+          "setting": "",
+          "units": [
+            {
+              "unit_id": "A1_S7_U1",
+              "content": [
+                {
+                  "type": "direction",
+                  "text": "츄부꼬프 등장."
+                },
+                {
+                  "type": "line",
+                  "character": "추부꾜프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "들어오며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 또 무슨 일이야?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아빠, 솔직히 양심적으로 말해보세요, 솔직히. 우리 옷까따이와 저쪽의 우가다이, 어떤 개가 나아요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "스쩨빤 스뻬빠노비치, 부탁합니다, 한 가지만 말해 주세요. 옷까따이가 아래턱이 짧습니까 아닙니까? 그래요, 안 그래요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그게 어쨌다는 거야? 그건 중요한 게 아니지! 대신에 이 근방에서 그만한 개가 어디 있어."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "하지만 제 우가다이가 낫죠? 양심적으로요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "흥분하지 말게, 친구... 그러니까... 자네의 우가다이는 물론 좋은 성질을 가지고 있어. 혈통이 좋고, 다리도 튼튼하고, 대퇴부도 강건하다 이말이야. 하지만 이보게, 이걸 알고 싶은지 모르겠지만... 두 가지 단점이 있네. 늙었고 콧등이 짧아."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송합니다, 제가 지금 가슴이 뛰어서... 사실을 따져봅시다... 이거 기억하세요? 지난번 마루스낀 초목에서 사냥할 때 우가다이는 말을 탄 라즈마하 백작과 나란히 달렸어요. 근데 옷까따이는 일 킬로미터는 뒤쳐졌죠."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "뒤쳐졌지, 백작의 사냥개 감독이 채찍질을 했기 때문이야."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "실제를 봅시다. 다른 개들은 모두 여우를 쫓아갔는데 녀석은 엉뚱하게 양이나 쫓고 있었죠."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아냐!... 착한 친구가 왜 그러나, 난 발끈하는 사람이야, 그러니까, 제발 이런 싸움은 그만 두세. 모두가 낯선 개를 부러운 눈초리로 바라보고 있으니까 때린 거란 말야... 아무렴! 죄다 마땅찮은 놈들 뿐이야! 그리고 당신, 자네도 잘못이 있어! 그러니까 응, 누구네 개가 자네의 우가다이보다 나은지는 알 거 아닌가, 지금 또 그런, 그... 그런 짓을 시작하고 말야... 난 다 기억하고 있다구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나도 다 기억하고 있어요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "추부꾜프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "부들부들 떨며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 나도 기억해... 그런데 자넨 뭘 기억하나?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "가슴이 뛰어... 다리가 마비됐어... 안돼."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리아 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "부들부들 떨며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 가슴이 뛰어... 당신이 무슨 사냥꾼이에요? 당신은 부엌에서 벽난로 옆에 누워서 바퀴벌레나 때려잡을까, 여우몰이는 못할 걸요! 가슴이 뛰어..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "하지만 제 우가다이가 낫죠? 양심적으로요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "흥분하지 말게, 친구... 그러니까... 자네의 우가다이는 물론 좋은 성질을 가지고 있어. 혈통이 좋고, 다리도 튼튼하고, 대퇴부도 강건하다 이말이야. 하지만 이보게, 이걸 알고 싶은지 모르겠지만... 두 가지 단점이 있네. 늙었고 콧등이 짧아."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "죄송합니다, 제가 지금 가슴이 뛰어서... 사실을 따져봅시다... 이거 기억하세요? 지난번 마루스낀 초목에서 사냥할 때 우가다이는 말을 탄 라즈마하 백작과 나란히 달렸어요. 근데 옷까따이는 일 킬로미터는 뒤쳐졌죠."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "뒤쳐졌지, 백작의 사냥개 감독이 채찍질을 했기 때문이야."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "실제를 봅시다. 다른 개들은 모두 여우를 쫓아갔는데 녀석은 엉뚱하게 양이나 쫓고 있었죠."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아냐!... 착한 친구가 왜 그러나, 난 발끈하는 사람이야, 그러니까, 제발 이런 싸움은 그만 두세. 모두가 낯선 개를 부러운 눈초리로 바라보고 있으니까 때린 거란 말야... 아무렴! 죄다 마땅찮은 놈들 뿐이야! 그리고 당신, 자네도 잘못이 있어! 그러니까 응, 누구네 개가 자네의 우가다이보다 나은지는 알 거 아닌가, 지금 또 그런, 그... 그런 짓을 시작하고 말야... 난 다 기억하고 있다구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "나도 다 기억하고 있어요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "부들부들 떨며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 나도 기억해... 그런데 자넨 뭘 기억하나?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "가슴이 뛰어... 다리가 마비됐어... 안돼."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "부들부들 떨며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 가슴이 뛰어... 당신이 무슨 사냥꾼이에요? 당신은 부엌에서 벽난로 옆에 누워서 바퀴벌레나 때려잡을까, 여우몰이는 못할 걸요! 가슴이 뛰어..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "사실 그렇지, 자네가 무슨 사냥꾼이야? 그래, 가슴이 뛰면 집에나 앉아있지, 말을 타고 달릴 수가 없다구. 사냥을 나간다고 해도, 왔다갔다 하면서 다른 개들이나 방해하고 싸움이나 할 거란 말일세. 내가 열받았으니까, 이 얘긴 그만 하자구. 자넨 원래가, 응, 사냥꾼이 아냐!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "그럼 당신은 사냥꾼이란 말예요? 백작한테 아부나 하고, 또 흉계나 꾸미려고 쫓아 다니는 거잖아요... 어이구 가슴이야!... 당신은 악당이에요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "뭐야? 내가 악당이라구? "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소리친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 입 닥쳐!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "악당!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "애송이 자식이! 핏덩이 놈아!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "늙은 쥐! 위선자!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "입 닥쳐, 안 그러면 지저분한 총으로 새잡듯이 널 쏴버리겠어! 놈팽이 자식아!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "모르는 사람이 없어요, - 어이구 심장이! - 당신의 죽은 마누라가 당신을 팼다죠... 다리가... 관자놀이... 불꽃이 튀어... 쓰러질 것 같아, 쓰러진다!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "너는 창고관리인 마누라의 궁둥이에 깔려 산다면서!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "어, 어, 어... 심장이 터진다! 어깨가 떨어져나가는 거 같아... 내 어깨 어딨어?... 나 죽는다! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소파에 쓰러진다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 의사를! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "기절한다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "애송이! 젖내나는 자식이! 놈팽이! 어이구 열받아! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "물을 마신다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 열받아!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당신이 무슨 사냥꾼이야! 말에 올라탈 줄도 모르면서! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "아버지에게"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 아빠! 이 사람 왜 그래요? 아빠! 좀 봐요, 아빠! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "큰 소리로 외친다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 이반 바실리예비치! 이 사람 죽어요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "난 열받았어!... 숨이 막혀!... 숨이 막힌다구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이 이가 죽어요! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "로모프를 손으로 흔들며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 이반 바실리치! 이반 바실리치! 이게 무슨 짓이야! 이 이가 죽어요! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "소파에 쓰러진다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 의사를, 의사를 불러줘요! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "히스테리컬해진다"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아니!... 왜 그러냐? 무슨 일이야?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "신음한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 그이가 죽어요!... 죽는다구요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "누가 죽어? "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "로모프를 들여다보고"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 정말로 죽을 판이네! 어이구 아버지! 물! 의사 불러와! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "로모프의 입에 물잔을 갖다댄다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 마셔!... 아니, 안 마시네... 그러면 죽었단 말야... 난 정말 불행한 놈이야! 난 왜 내 머리에 총알을 박아버리지 않는 거야? 왜 이제껏 칼로 목을 안 땄을까? 내가 뭘 기다려? 나한테 칼을 줘! 나한테 권총을 가져다 줘!"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "로모프가 꿈틀거린다."
+                },
+                {
+                  "type": "direction",
+                  "text": "살아난 것 같아... 물을 마셔!... 자, 이렇게...."
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "불꽃이... 웬 안개... 여기가 어디야?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "당장에 결혼을 하게, 그리고... 젠장맞을! 얘가 승낙했어! "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "로모프와 딸의 손을 잡게 한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 얘가 허락을 했다구. 그러니 날 좀 가만 내버려 둬!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "예? 뭐라구요? "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "일어나며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 누구하고요?"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이 애가 승낙했다구! 왜? 키스하라구... 이런 젠장!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "신음한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 그이가 살아났어요... 네, 네, 허락해요..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "키스를 하라구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "네? 누구한테요? "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "나딸리야 스쩨빠노브나와 키스한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 정말 기뻐요... 그런데 무슨 일이 있었죠? 아, 네, 알겠어요... 가슴이... 불꽃이... 난 행복해요, 나딸리야 스쩨빠노브나... "
+                    },
+                    {
+                      "type": "direction",
+                      "value": "손에 키스한다"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 다리가 마비되었었어..."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "난... 나도 행복해요...."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "이제 한 짐 덜었구만... 어이구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "하지만... 지금이라도 인정하세요. 우가다이는 옷까따이보다 못해요."
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "더 나아요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "못해요!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "아하, 가정의 행복이 시작되는구만! 샴페인 가져와!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "로모프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "더 낫다니까!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "나딸리야 스쩨빠노브나",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "text",
+                      "value": "못해요! 못해요! 못하다구!"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "character": "츄부꼬프",
+                  "subtype": "dialogue",
+                  "content": [
+                    {
+                      "type": "direction",
+                      "value": "목소리를 더 크게 내며"
+                    },
+                    {
+                      "type": "text",
+                      "value": " 샴페인! 샴페인 가져와!"
+                    }
+                  ]
+                },
+                {
+                  "type": "direction",
+                  "text": "막."
+                }
+              ],
+              "analysis": {
+                "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 등장하며 이반 바실리예비치 로모프와 대화에 참여한다. 로모프와 나딸리야 스쩨빠노브나의 논쟁은 계속되고, 결국 로모프가 실신한다. 추부꼬프는 로모프와 나딸리야의 결혼을 강요하고, 둘은 합의한다. 하지만 그들은 다시 개에 대한 논쟁을 시작한다.",
+                "entrance_exit": [
+                  {
+                    "character": "스쩨빤 스쩨빠노비치 추부꼬프",
+                    "type": "enter",
+                    "state_description": "흥분한 상태로 등장하여 개 논쟁에 뛰어든다."
+                  }
+                ],
+                "plot_tags": [
+                  "#climax",
+                  "#resolution",
+                  "#comedic_relief"
+                ],
+                "topic_tags": [
+                  "#dog_comparison",
+                  "#marriage",
+                  "#family_conflict"
+                ],
+                "mood": "Chaotic",
+                "estimated_duration_sec": 180,
+                "scenery": [],
+                "props": [
+                  {
+                    "name": "앞치마",
+                    "status": "continuing",
+                    "description": "나딸리야 스쩨빠노브나가 계속 착용 중.",
+                    "holder": "나딸리야 스쩨빠노브나"
+                  },
+                  {
+                    "name": "성냥",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 높음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "물병",
+                    "status": "continuing",
+                    "description": "추부꼬프가 물을 마시고 로모프의 입에 물잔을 갖다 대어 무대에 그대로 두어졌을 것으로 추정됨.",
+                    "holder": null
+                  },
+                  {
+                    "name": "연미복",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중으로 보임.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "흰 장갑",
+                    "status": "continuing",
+                    "description": "로모프가 착용 중.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "모자",
+                    "status": "continuing",
+                    "description": "로모프가 소지하고 있을 가능성이 있음.",
+                    "holder": "이반 바실리예비치 로모프"
+                  },
+                  {
+                    "name": "소파",
+                    "status": "new",
+                    "description": "로모프가 실신하며 소파에 쓰러진다.",
+                    "holder": null
+                  }
+                ],
+                "background": {
+                  "description": "추부꼬프의 집 내부, 논쟁이 이어지는 실내 장면 지속.",
+                  "status": "same",
+                  "reusability_note": "계속 같은 실내 배경 사용 가능함."
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "narrative_structure": {
+    "main_plot_summary": "The play revolves around 이반 바실리예비치 로모프's proposal to 나딸리야 스쩨빠노브나, which becomes entangled in a series of comedic and contentious disputes over land ownership and the superiority of their respective dogs, culminating in forced reconciliations despite lingering disagreements.",
+    "sub_plot_summary": "The sub-plot involves familial loyalty and the comical absurdities in human relationships, highlighted by the passionate and irrational arguments between the families over trivial matters, ultimately ending in a socially obligated marriage.",
+    "plot_graph": {
+      "nodes": [
+        {
+          "unit_id": "A1_S1_U1",
+          "summary": "스쩨빤 스쩨빠노비치 추부꼬프와 이반 바실리예비치 로모프가 만난다. 오래간만에 재회하면서 서로의 안부를 묻고, 로모프의 연미복과 장갑 차림에 대해 대화를 나눈다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S1_U2",
+          "summary": "이반 바실리예비치 로모프가 스쩨빤 스쩨빠노비치 추부꼬프에게 부탁을 하기 위해 방문했다. 로모프는 약간의 긴장과 흥분 속에 도움을 요청하려 하지만 머뭇거리고, 물을 마시면서 진정하고자 노력한다. 추부꼬프는 잠시 의심하지만 빨리 본론을 이야기하라고 재촉한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S1_U3",
+          "summary": "이반 바실리예비치 로모프는 나딸리야 스쩨빠노브나에게 청혼하기 위해 방문했다고 밝히며, 스쩨빤 스쩨빠노비치 추부꼬프는 이에 크게 기뻐하며 그를 끌어안고 입을 맞춘다. 추부꼬프는 나딸리야 스쩨빠노브나를 데려오기 위해 자리를 뜬다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S2_U1",
+          "summary": "이반 바실리예비치 로모프는 자신이 결혼해야 한다고 결심하며 나딸리야 스쩨빠노브나가 좋은 아내감이라고 생각한다. 그는 자신의 건강 문제와 나이에 대한 우려를 밝혔으며, 혼자서 불안과 추위에 떨고 있다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S3_U1",
+          "summary": "이반 바실리예비치 로모프와 나딸리야 스쩨빠노브나가 만난다. 나딸리야 스쩨빠노브나는 앞치마와 작업복을 입고 로모프를 맞이하며, 그는 결혼 제안을 위해 방문했음을 암시한다. 그러나 두 사람은 쇠풀 마을 소유권에 대해 심각한 논쟁을 시작하고, 그 논쟁은 격해진다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S4_U1",
+          "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 등장하여 나딸리야 스쩨빠노브나와 이반 바실리예비치 로모프 사이의 쇠풀 마을 소유권 논쟁에 가담한다. 나딸리야는 아버지에게 자기 편을 들어줄 것을 요청하고, 추부꼬프는 그 땅이 자기네 소유라고 주장한다. 로모프는 할머니의 시간이 지나면서 생긴 오해라고 반박한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S4_U2",
+          "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 이반 바실리예비치 로모프에게 쇠풀 마을의 소유권 문제에 관한 그의 주장을 반박하며 과거와 도면을 언급한다. 로모프는 자신의 소유권을 증명하겠다고 단호하게 반응한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S4_U3",
+          "summary": "스쩨빤 스쩨빠노비치 추부꼬프는 소리친다고 아무 증명이 안 된다고 하며, 이반 바실리예비치 로모프에게 쇠풀 마을을 다른 사람에게 주겠다고 얘기하며 농노들에게 줄 것이라고 강조한다. 로모프는 그 권리에 대해 반문한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S4_U4",
+          "summary": "사건은 폭발적인 논쟁으로 절정에 이른다. 스쩨빤 스쩨빠노비치 추부꼬프와 이반 바실리예비치 로모프는 서로의 가족과 개인을 비난하며 격앙된 언쟁을 벌이고, 나딸리야 스쩨빠노브나는 절정의 긴장 속에서 로모프를 다그친다. 마지막에 로모프는 고통과 두통을 호소하며 물을 찾고 비틀거리며 퇴장한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S5_U1",
+          "summary": "추부꼬프와 나딸리야 스쩨빠노브나는 이반 바실리예비치 로모프에 대한 불만을 쏟아냄. 그들은 로모프의 행동을 비난하고, 그의 청혼 시도에 대해 경멸적으로 논의함.",
+          "plot_type": "sub"
+        },
+        {
+          "unit_id": "A1_S5_U2",
+          "summary": "나딸리야 스쩨빠노브나와 스쩨빤 스쩨빠노비치 추부꼬프가 이반 바실리예비치 로모프의 청혼에 대해 이야기하며, 청혼 사실을 나딸리야가 처음 알게 됨. 추부꼬프는 로모프의 차림새를 비꼬며 조롱함.",
+          "plot_type": "sub"
+        },
+        {
+          "unit_id": "A1_S5_U3",
+          "summary": "나딸리야 스쩨빠노브나가 이반 바실리예비치 로모프의 청혼을 듣고 충격을 받아 히스테리 상태에 빠진다. 스쩨빤 스쩨빠노비치 추부꼬프는 그녀를 진정시키려 애쓰며 로모프를 데리러 나갔다가 다시 들어온다. 나딸리야는 계속해서 로모프를 데려오라고 외치고, 추부꼬프는 청혼 상황에 대한 스트레스를 발산한다. 로모프가 문간에 모습을 드러낸다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S6_U1",
+          "summary": "이반 바실리예비치 로모프는 몸에 극도로 힘이 빠진 상태로 들어오고, 나딸리야 스쩨빠노브나는 사과하며 '쇠풀 마을'이 로모프의 것이라고 인정한다. 두 사람은 앉으며 대화를 이어간다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S6_U2",
+          "summary": "나딸리야 스쩨빠노브나와 이반 바실리예비치 로모프가 서로의 의견을 바꿔서 다른 화제로 대화를 시도하지만 로모프는 여전히 과거의 갈등을 언급한다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S6_U3",
+          "summary": "이반 바실리예비치 로모프와 나딸리야 스쩨빠노브나는 개의 우수성을 두고 극심한 말다툼을 벌인다.",
+          "plot_type": "main"
+        },
+        {
+          "unit_id": "A1_S7_U1",
+          "summary": "스쩨빤 스쩨빠노비치 추부꼬프가 등장하며 이반 바실리예비치 로모프와 대화에 참여한다. 로모프와 나딸리야 스쩨빠노브나의 논쟁은 계속되고, 결국 로모프가 실신한다. 추부꼬프는 로모프와 나딸리야의 결혼을 강요하고, 둘은 합의한다. 하지만 그들은 다시 개에 대한 논쟁을 시작한다.",
+          "plot_type": "main"
+        }
+      ],
+      "edges": [
+        {
+          "source_unit_id": "A1_S1_U1",
+          "target_unit_id": "A1_S1_U2",
+          "connection_type": "causal",
+          "description": "Introduction of characters sets the stage for 로모프's visit and request."
+        },
+        {
+          "source_unit_id": "A1_S1_U2",
+          "target_unit_id": "A1_S1_U3",
+          "connection_type": "causal",
+          "description": "로모프's nervous intent leads to his revealing the purpose of his visit: a proposal."
+        },
+        {
+          "source_unit_id": "A1_S1_U3",
+          "target_unit_id": "A1_S2_U1",
+          "connection_type": "thematic",
+          "description": "The theme of marriage and proposal is solidified as 로모프 expresses personal reasons for marriage."
+        },
+        {
+          "source_unit_id": "A1_S2_U1",
+          "target_unit_id": "A1_S3_U1",
+          "connection_type": "causal",
+          "description": "로모프's resolution to marry leads to the meeting with 나딸리야 where initial proposal context is set."
+        },
+        {
+          "source_unit_id": "A1_S3_U1",
+          "target_unit_id": "A1_S4_U1",
+          "connection_type": "causal",
+          "description": "The meeting with 나딸리야 spirals into a land ownership dispute which is escalated by 추부꼬프's involvement."
+        },
+        {
+          "source_unit_id": "A1_S4_U1",
+          "target_unit_id": "A1_S4_U2",
+          "connection_type": "causal",
+          "description": "추부꼬프's participation energizes the land dispute."
+        },
+        {
+          "source_unit_id": "A1_S4_U2",
+          "target_unit_id": "A1_S4_U3",
+          "connection_type": "causal",
+          "description": "Arguments over ownership become increasingly heated."
+        },
+        {
+          "source_unit_id": "A1_S4_U3",
+          "target_unit_id": "A1_S4_U4",
+          "connection_type": "causal",
+          "description": "The climax of the dispute results in 로모프's physical distress."
+        },
+        {
+          "source_unit_id": "A1_S4_U4",
+          "target_unit_id": "A1_S5_U1",
+          "connection_type": "thematic",
+          "description": "The thematic focus shifts briefly to criticism and mockery of 로모프 following the intense dispute."
+        },
+        {
+          "source_unit_id": "A1_S5_U1",
+          "target_unit_id": "A1_S5_U2",
+          "connection_type": "causal",
+          "description": "Continued discussion of 로모프's proposal reveals 나딸리야's ignorance of the intended proposal."
+        },
+        {
+          "source_unit_id": "A1_S5_U2",
+          "target_unit_id": "A1_S5_U3",
+          "connection_type": "causal",
+          "description": "Revelation of proposal intent leads to 나딸리야's emotional reaction."
+        },
+        {
+          "source_unit_id": "A1_S5_U3",
+          "target_unit_id": "A1_S6_U1",
+          "connection_type": "causal",
+          "description": "나딸리야's insistence on 로모프's return sets the stage for reconciliation."
+        },
+        {
+          "source_unit_id": "A1_S6_U1",
+          "target_unit_id": "A1_S6_U2",
+          "connection_type": "causal",
+          "description": "Reconciliation is attempted but fails as past conflicts resurface."
+        },
+        {
+          "source_unit_id": "A1_S6_U2",
+          "target_unit_id": "A1_S6_U3",
+          "connection_type": "causal",
+          "description": "Old enmities lead to a new argument over the dogs."
+        },
+        {
+          "source_unit_id": "A1_S6_U3",
+          "target_unit_id": "A1_S7_U1",
+          "connection_type": "causal",
+          "description": "The ongoing argument leads to 로모프's physical collapse and forced resolution by 추부꼬프."
+        }
+      ]
+    }
+  },
+  "asset_tracking": null
+}
