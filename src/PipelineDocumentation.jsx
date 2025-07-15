@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Box, Typography, Paper, Button, Grid, Card, CardContent, Divider, Chip } from '@mui/material';
 import { ArrowLeft, ArrowRight, FileText, ListTree, Network, Split, FolderSearch, LineChart } from 'lucide-react';
 
+// Import custom CSS for no-scroll functionality
+import './no-scroll.css';
+
 // Import JSON data
 import eventStreamJson from './data/1_event_stream_merged.json';
 import hierarchicalJson from './data/2_hierarchical_script.json';
@@ -9,20 +12,11 @@ import segmentedJson from './data/3_segmented_units.json';
 import analyzedJson from './data/4_final_analyzed_script.json';
 import plotJson from './data/5_final_script_with_plot.json';
 
-// Sample raw text from the play
-const rawPlayText = `MASHA. [Snuffing out the candle] There is light enough.
+// Import raw play text
+import proposalText from './data/proposal.txt?raw';
 
-MEDVIEDENKO. I might have walked home, but I am sure to be ill after it, and though our school is closed until the end of August, I should have to stay at home in bed, and all because of your caprice. [Seeing the dead sea-gull] What is that?
-
-MASHA. A sea-gull. Constantine has shot it.
-
-MEDVIEDENKO. What a beautiful bird! Really, I can't understand why you want to kill it. [He picks up the sea-gull] You're going to have it stuffed?
-
-MASHA. No.
-
-MEDVIEDENKO. That's a pity. [Pause]
-
-SORIN. My nephew keeps telling me to go away and live in the city. [Laughing] He says that I am too old to be in the country. [Smoothing his moustache] Old indeed! The retired Government clerk is still young!`;
+// Using imported raw play text
+const rawPlayText = proposalText;
 
 // Define the pipeline pages for navigation
 const pipelinePages = [
@@ -216,6 +210,28 @@ const PipelineDocumentation = () => {
   
   // For the intro page, we want to show a special layout
   const isIntroPage = currentPage.id === 'intro';
+  
+  // Control scroll behavior based on current page
+  useEffect(() => {
+    const documentBody = document.body;
+    const documentHtml = document.documentElement;
+    
+    if (isIntroPage) {
+      // Disable scrolling on intro page
+      documentBody.classList.add('no-scroll');
+      documentHtml.classList.add('no-scroll');
+    } else {
+      // Enable scrolling on other pages
+      documentBody.classList.remove('no-scroll');
+      documentHtml.classList.remove('no-scroll');
+    }
+    
+    // Cleanup function
+    return () => {
+      documentBody.classList.remove('no-scroll');
+      documentHtml.classList.remove('no-scroll');
+    };
+  }, [isIntroPage]);
 
   const goToNextPage = () => {
     if (currentPageIndex < pipelinePages.length - 1) {
@@ -235,10 +251,10 @@ const PipelineDocumentation = () => {
 
   // Special rendering for intro page
   const renderIntroPage = () => (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 80px)' }}>
-      <Box sx={{ p: 2, textAlign: 'center' }}>
-        <Typography variant="h4" gutterBottom sx={{ mt: 0, mb: 2, fontWeight: 500 }}>Drama Processing Pipeline</Typography>
-        <Typography variant="body1" sx={{ mb: 2, color: 'text.secondary' }}>From Raw Play Text to Structured Schema</Typography>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 150px)', justifyContent: 'center' }} className="no-scroll-container">
+      <Box sx={{ p: 2, textAlign: 'center' }} className="no-scroll-container">
+        <Typography variant="h3" gutterBottom sx={{ mt: 0, mb: 3, fontWeight: 600, fontSize: '2.5rem' }}>Drama Processing Pipeline</Typography>
+        <Typography variant="h6" sx={{ mb: 3, color: 'text.secondary', fontSize: '1.2rem' }}>From Raw Play Text to Structured Schema</Typography>
         
         <Grid container spacing={2} sx={{ mb: 3 }}>
           <Grid item xs={4}>
@@ -319,7 +335,7 @@ const PipelineDocumentation = () => {
         
         <Box sx={{ border: '1px solid #e0e0e0', borderRadius: 1, p: 2, bgcolor: '#f5f5f5', mt: 1, maxWidth: '850px', mx: 'auto' }}>
           <Typography variant="body1" sx={{ fontSize: '0.9rem' }}>
-            This pipeline demonstrates how <strong>"The Seagull" by Anton Chekhov</strong> is transformed from raw text into a structured JSON schema with progressively richer annotations. Use the navigation buttons below to explore each transformation stage.
+            This pipeline demonstrates how <strong>"The Proposal" by Anton Chekhov</strong> is transformed from raw text into a structured JSON schema with progressively richer annotations. Use the navigation buttons below to explore each transformation stage.
           </Typography>
         </Box>
       </Box>
@@ -339,7 +355,7 @@ const PipelineDocumentation = () => {
     const formattedTarget = extractRelevantExample(targetData, currentPage.id);
     
     return (
-      <Box sx={{ p: 1, maxHeight: 'calc(100vh - 80px)' }}>
+      <Box sx={{ p: 1, maxHeight: 'calc(100vh - 110px)', overflow: 'auto' }}>
         <Typography variant="subtitle1" gutterBottom sx={{ mb: 0.5, fontWeight: 500 }}>{currentPage.title}</Typography>
         <Typography variant="body2" paragraph sx={{ mb: 1, fontSize: '0.75rem' }}>{currentPage.description}</Typography>
         
@@ -497,7 +513,7 @@ const PipelineDocumentation = () => {
   };
   
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 56px)' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 72px)' }}>
       {/* Main content area */}
       <Box sx={{ flex: 1, overflowY: 'auto', overflowX: 'hidden' }}>
         {isIntroPage ? renderIntroPage() : renderTransformationPage()}
